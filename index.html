@@ -11,7 +11,6 @@
       --surface-soft: #ecece7;
       --text: #252521;
       --muted: #66665f;
-      --line: rgba(37, 37, 33, 0.1);
       --green: #5d8f61;
       --green-dark: #4f7f53;
       --green-soft: #d9efcb;
@@ -19,14 +18,10 @@
       --yellow-dark: #d2a700;
       --shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
       --radius-xl: 30px;
-      --radius-lg: 22px;
-      --radius-md: 16px;
       --max: 1180px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
@@ -51,13 +46,6 @@
     a {
       color: inherit;
       text-decoration: none;
-    }
-
-    button,
-    input,
-    textarea,
-    select {
-      font: inherit;
     }
 
     .container {
@@ -103,19 +91,13 @@
       max-width: 15ch;
     }
 
-    h3 {
-      font-size: 1.25rem;
-    }
-
     p {
       margin: 0 0 16px;
       font-size: 1.03rem;
       color: var(--muted);
     }
 
-    strong {
-      color: var(--text);
-    }
+    strong { color: var(--text); }
 
     .btn {
       display: inline-flex;
@@ -185,36 +167,13 @@
     .logo {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      font-size: 1.95rem;
-      font-weight: 800;
-      letter-spacing: -0.03em;
     }
 
-    .logo__mark {
-      width: 52px;
-      height: 32px;
-      border-radius: 999px;
-      position: relative;
-      background: linear-gradient(90deg, #6db562 0 50%, #4d82c5 50% 100%);
-      box-shadow: inset 0 0 0 3px rgba(255,255,255,0.55);
-      overflow: hidden;
-      flex: 0 0 auto;
+    .logo img {
+      height: 42px;
+      width: auto;
+      display: block;
     }
-
-    .logo__mark::before,
-    .logo__mark::after {
-      content: "✓";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-54%);
-      color: white;
-      font-size: 18px;
-      font-weight: 900;
-    }
-
-    .logo__mark::before { left: 9px; }
-    .logo__mark::after { right: 9px; }
 
     .site-nav {
       display: flex;
@@ -263,35 +222,9 @@
     }
 
     .hero-media {
-      min-height: 600px;
+      min-height: 510px;
       position: relative;
-      padding: 30px;
-      display: flex;
-      align-items: flex-end;
-      background:
-        linear-gradient(rgba(255,255,255,0.06), rgba(255,255,255,0.06)),
-        url('images/left.png') center/cover;
-    }
-
-
-    .hero-media__phone {
-      aspect-ratio: 10 / 18;
-      border-radius: 26px;
-      background: linear-gradient(180deg, #62b468, #4c9c59);
-      padding: 14px;
-      margin-bottom: 12px;
-    }
-
-    .hero-media__screen {
-      height: 100%;
-      border-radius: 18px;
-      background: white;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 12px;
-      font-weight: 700;
-      color: var(--text);
+      background: url('images/image1.png') center/cover no-repeat;
     }
 
     .hero-copy {
@@ -301,10 +234,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    }
-
-    .hero-copy .eyebrow {
-      display: none;
     }
 
     .hero-copy h1,
@@ -376,9 +305,7 @@
       gap: 14px;
     }
 
-    .hero-actions {
-      margin-top: 18px;
-    }
+    .hero-actions { margin-top: 18px; }
 
     .quick-links {
       justify-content: flex-end;
@@ -392,9 +319,7 @@
       align-items: center;
     }
 
-    .content-block {
-      max-width: 560px;
-    }
+    .content-block { max-width: 560px; }
 
     .quote {
       margin-top: 10px;
@@ -413,93 +338,31 @@
       border: 1px solid rgba(37, 37, 33, 0.05);
     }
 
-    .scan-tag {
-      width: min(100%, 290px);
-      background: #efefeb;
-      border-radius: 24px;
-      padding: 22px;
-      box-shadow: inset 0 0 0 1px rgba(0,0,0,0.05);
+    .visual-card--plain {
+      padding: 0;
+      background: transparent;
+      border: 0;
+      box-shadow: none;
+      min-height: auto;
     }
 
-    .scan-tag__inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
+    .visual-img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      display: block;
+      border-radius: 28px;
     }
 
-    .scan-box {
-      padding: 14px 10px;
-      border-radius: 24px;
-      color: white;
-      text-align: center;
-      font-size: 0.98rem;
-      font-weight: 800;
-      box-shadow: 0 14px 26px rgba(0,0,0,0.14);
+    .visual-img--narrow {
+      max-width: 300px;
     }
 
-    .scan-box--in { background: #59a861; }
-    .scan-box--out { background: #3a75b3; }
-
-    .qr {
-      width: 68px;
-      height: 68px;
-      margin: 0 auto 10px;
-      border-radius: 10px;
-      background:
-        linear-gradient(90deg, #111 10%, transparent 10% 20%, #111 20% 30%, transparent 30% 40%, #111 40% 50%, transparent 50% 60%, #111 60% 70%, transparent 70% 80%, #111 80% 90%, transparent 90%),
-        linear-gradient(#111 10%, transparent 10% 20%, #111 20% 30%, transparent 30% 40%, #111 40% 50%, transparent 50% 60%, #111 60% 70%, transparent 70% 80%, #111 80% 90%, transparent 90%),
-        #fff;
-      border: 4px solid white;
+    .visual-img--monitor {
+      max-width: 430px;
     }
 
-    .monitor {
-      width: min(100%, 360px);
-    }
-
-    .monitor__screen {
-      background: white;
-      border: 12px solid #242424;
-      aspect-ratio: 16 / 10;
-      padding: 18px;
-      display: grid;
-      align-content: start;
-      gap: 8px;
-      font-size: 0.72rem;
-    }
-
-    .monitor__row {
-      display: grid;
-      grid-template-columns: 1.2fr repeat(6, 1fr);
-      gap: 8px;
-    }
-
-    .monitor__row > div {
-      background: #f2f2ee;
-      padding: 4px 3px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      text-align: center;
-    }
-
-    .monitor__stand {
-      width: 22px;
-      height: 60px;
-      margin: 0 auto;
-      background: #b2b2ae;
-    }
-
-    .monitor__base {
-      width: 126px;
-      height: 14px;
-      border-radius: 999px;
-      margin: 0 auto;
-      background: #90908c;
-    }
-
-    .cta-strip {
-      padding-top: 8px;
-    }
+    .cta-strip { padding-top: 8px; }
 
     .law-grid {
       display: grid;
@@ -508,21 +371,18 @@
       align-items: center;
     }
 
-    .law-copy {
-      max-width: 590px;
-    }
+    .law-copy { max-width: 590px; }
 
-    .people-shot {
-      min-height: 420px;
+    .people-shot img {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      display: block;
       border-radius: var(--radius-xl);
-      background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1400&q=80') center/cover;
       box-shadow: var(--shadow);
-      border: 1px solid rgba(37, 37, 33, 0.05);
     }
 
-    .faq-wrap {
-      max-width: 860px;
-    }
+    .faq-wrap { max-width: 860px; }
 
     .faq {
       display: grid;
@@ -548,9 +408,7 @@
       color: var(--text);
     }
 
-    summary::-webkit-details-marker {
-      display: none;
-    }
+    summary::-webkit-details-marker { display: none; }
 
     summary::after {
       content: "+";
@@ -564,13 +422,9 @@
       font-weight: 500;
     }
 
-    details[open] summary::after {
-      content: "–";
-    }
+    details[open] summary::after { content: "–"; }
 
-    .faq__body {
-      padding: 0 24px 22px;
-    }
+    .faq__body { padding: 0 24px 22px; }
 
     .footer {
       padding: 28px 0 60px;
@@ -583,36 +437,25 @@
       display: grid;
       grid-template-columns: 1.15fr auto;
       gap: 28px;
+      align-items: start;
       border: 1px solid rgba(37, 37, 33, 0.04);
     }
 
-    .footer-copy {
-      max-width: 560px;
-    }
+    .footer-copy { max-width: 560px; }
 
-    .footer-copy p {
-      margin-bottom: 18px;
-    }
+    .footer-copy p { margin-bottom: 18px; }
 
     .footer-badges {
       display: grid;
       gap: 16px;
       align-content: start;
+      justify-items: end;
     }
 
-    .badge {
-      width: 96px;
-      aspect-ratio: 1;
-      display: grid;
-      place-items: center;
-      padding: 10px;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 10px 18px rgba(0,0,0,0.08);
-      font-size: 0.78rem;
-      font-weight: 800;
-      text-align: center;
-      color: var(--text);
+    .footer-badge-img {
+      width: 76px;
+      height: auto;
+      display: block;
     }
 
     .section-anchor {
@@ -648,9 +491,7 @@
       gap: 16px;
     }
 
-    .section-header h2 {
-      margin-bottom: 0;
-    }
+    .section-header h2 { margin-bottom: 0; }
 
     .muted-small {
       font-size: 0.94rem;
@@ -666,11 +507,16 @@
       }
 
       .hero-media {
-        min-height: 460px;
+        min-height: 420px;
       }
 
       .quick-links {
         justify-content: flex-start;
+      }
+
+      .footer-badges {
+        justify-items: start;
+        grid-auto-flow: column;
       }
     }
 
@@ -694,10 +540,7 @@
         padding: 34px 24px 30px;
       }
 
-      .hero-copy h1 {
-        max-width: none;
-      }
-
+      .hero-copy h1,
       .hero-price-line {
         max-width: none;
       }
@@ -708,15 +551,12 @@
         width: min(calc(100% - 24px), var(--max));
       }
 
-      .logo {
-        font-size: 1.65rem;
-      }
-
       .site-nav,
       .site-nav__links,
       .hero-actions,
       .quick-links,
-      .footer-actions {
+      .footer-actions,
+      .footer-badges {
         flex-direction: column;
         align-items: stretch;
       }
@@ -726,12 +566,7 @@
       }
 
       .hero-media {
-        min-height: 390px;
-        padding: 20px;
-      }
-
-      .hero-media__card {
-        width: 190px;
+        min-height: 300px;
       }
 
       .hero-copy h1 {
@@ -750,6 +585,12 @@
       summary {
         font-size: 1.02rem;
       }
+
+      .footer-badges {
+        display: grid;
+        grid-auto-flow: row;
+        justify-items: start;
+      }
     }
   </style>
 </head>
@@ -757,7 +598,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="#top" class="logo" aria-label="Punctoo home">
-        <img src="images/logo-punctooo.png" alt="Punctoo logo" style="height:42px; width:auto; display:block;">
+        <img src="images/logo-punctooo.png" alt="Punctoo logo">
       </a>
 
       <div class="site-nav">
@@ -775,20 +616,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-card">
-          <div class="hero-media">
-            <div class="hero-media__card">
-              <div class="hero-media__phone">
-                <div class="hero-media__screen">
-                  <div>
-                    <div style="font-size:0.84rem; margin-bottom:10px;">SCAN IN<br>GESLAAGD</div>
-                    <div style="font-size:4rem; line-height:1; color:#4ea85c;">✓</div>
-                    <div style="font-size:0.74rem; margin-top:10px;">PETER DE BAETS<br>01/01/2027 · 07:57</div>
-                  </div>
-                </div>
-              </div>
-              <div class="muted-small">Vervang later door je eigen productbeeld.</div>
-            </div>
-          </div>
+          <div class="hero-media" aria-label="Hero afbeelding"></div>
 
           <div class="hero-copy">
             <div class="hero-copy__top">
@@ -824,37 +652,16 @@
           </div>
         </div>
 
-        <div class="visual-card">
-          <div class="scan-tag" aria-label="Voorbeeld van scan tag">
-            <div class="scan-tag__inner">
-              <div class="scan-box scan-box--in">
-                <div class="qr"></div>
-                IN
-              </div>
-              <div class="scan-box scan-box--out">
-                <div class="qr"></div>
-                OUT
-              </div>
-            </div>
-          </div>
+        <div class="visual-card visual-card--plain">
+          <img src="images/image4.png" alt="Scan tag" class="visual-img visual-img--narrow">
         </div>
       </div>
     </section>
 
     <section class="section">
       <div class="container split">
-        <div class="visual-card">
-          <div class="hero-media__card" style="width:min(100%,260px); margin:0 auto;">
-            <div class="hero-media__phone">
-              <div class="hero-media__screen">
-                <div>
-                  <div style="font-size:0.84rem; margin-bottom:10px;">SCAN IN<br>GESLAAGD</div>
-                  <div style="font-size:4rem; line-height:1; color:#4ea85c;">✓</div>
-                  <div style="font-size:0.74rem; margin-top:10px;">PETER DE BAETS<br>01/01/2027 · 07:57</div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="visual-card visual-card--plain">
+          <img src="images/image3.png" alt="App voorbeeld" class="visual-img visual-img--narrow">
         </div>
 
         <div class="content-block">
@@ -879,22 +686,8 @@
           </div>
         </div>
 
-        <div class="visual-card">
-          <div class="monitor" aria-label="Voorbeeld van rapportering op monitor">
-            <div class="monitor__screen">
-              <div class="monitor__row" style="font-weight:700;">
-                <div>NAAM</div><div>IN</div><div>UIT</div><div>VERW.</div><div>REAL.</div><div>BAL.</div><div>STATUS</div>
-              </div>
-              <div class="monitor__row">
-                <div>PETER</div><div>07:57</div><div>16:28</div><div>8:00</div><div>8:31</div><div>+0:31</div><div>OK</div>
-              </div>
-              <div class="monitor__row">
-                <div>ANNE</div><div>08:12</div><div>16:01</div><div>8:00</div><div>7:49</div><div>-0:11</div><div>OK</div>
-              </div>
-            </div>
-            <div class="monitor__stand"></div>
-            <div class="monitor__base"></div>
-          </div>
+        <div class="visual-card visual-card--plain">
+          <img src="images/image5.png" alt="Monitor rapportering" class="visual-img visual-img--monitor">
         </div>
       </div>
     </section>
@@ -927,7 +720,9 @@
           </div>
         </div>
 
-        <div class="people-shot" aria-label="Team op kantoor"></div>
+        <div class="people-shot">
+          <img src="images/image6.png" alt="Team op kantoor">
+        </div>
       </div>
     </section>
 
@@ -978,9 +773,9 @@
         </div>
 
         <div class="footer-badges">
-          <div class="badge">Audited</div>
-          <div class="badge">Secured<br>Server</div>
-          <div class="badge">GDPR<br>Compliant</div>
+          <img src="images/image7.png" alt="Audited badge" class="footer-badge-img">
+          <img src="images/image8.png" alt="Secured server badge" class="footer-badge-img">
+          <img src="images/image9.png" alt="GDPR compliant badge" class="footer-badge-img">
         </div>
       </div>
     </div>
