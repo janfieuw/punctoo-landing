@@ -224,7 +224,19 @@
     .hero-media {
       min-height: 410px;
       position: relative;
-      background: url('images/image11.png') center/cover no-repeat;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: center center;
+      display: block;
     }
 
     .hero-copy {
@@ -375,12 +387,12 @@
     }
 
     .law-list-box {
-  background: rgba(222, 236, 241, 0.85);
-  padding: 14px 18px;
-  margin: 16px 0 18px 16px;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-}
+      background: rgba(222, 236, 241, 0.85);
+      padding: 14px 18px;
+      margin: 16px 0 18px 16px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
 
     .law-list-box ul {
       margin: 0;
@@ -645,7 +657,9 @@
     <section class="hero">
       <div class="container">
         <div class="hero-card">
-          <div class="hero-media" aria-label="Hero afbeelding"></div>
+          <div class="hero-media">
+            <img src="images/image11.png" alt="Hero afbeelding" class="hero-img">
+          </div>
 
           <div class="hero-copy">
             <div class="hero-copy__top">
