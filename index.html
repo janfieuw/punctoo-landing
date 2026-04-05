@@ -99,21 +99,22 @@
 
     strong { color: var(--text); }
 
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      min-height: 54px;
-      padding: 0 24px;
-      border: 1px solid transparent;
-      border-radius: 999px;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.11em;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 0 24px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  text-align: center;
+}
 
     .btn-primary {
       background: var(--yellow);
@@ -581,51 +582,63 @@
     }
 
     @media (max-width: 640px) {
-      .container {
-        width: min(calc(100% - 24px), var(--max));
-      }
+  .container {
+    width: min(calc(100% - 24px), var(--max));
+  }
 
-      .site-nav,
-      .site-nav__links,
-      .quick-links,
-      .footer-actions,
-      .footer-badges {
-        flex-direction: column;
-        align-items: stretch;
-      }
+  .site-nav,
+  .site-nav__links,
+  .quick-links,
+  .footer-actions,
+  .footer-badges {
+    flex-direction: column;
+    align-items: stretch;
+  }
 
-      .btn {
-        width: 100%;
-      }
+  .btn {
+    width: 100%;
+    min-height: auto;
+    padding: 14px 18px;
+    white-space: normal;
+    line-height: 1.35;
+    letter-spacing: 0.05em;
+  }
 
-      .hero-media {
-        min-height: 300px;
-      }
+  .site-nav .btn,
+  .quick-links .btn,
+  .cta-strip .btn,
+  .footer-actions .btn {
+    font-size: 0.72rem;
+  }
 
-      .hero-copy h1,
-      .hero-price-line {
-        font-size: 1.6rem;
-      }
+  .hero-media {
+    min-height: 300px;
+  }
 
-      .visual-card,
-      .footer-card {
-        padding: 24px;
-      }
+  .hero-copy h1,
+  .hero-price-line {
+    font-size: 1.6rem;
+  }
 
-      summary {
-        font-size: 1.02rem;
-      }
+  .visual-card,
+  .footer-card {
+    padding: 24px;
+  }
 
-      .footer-badges {
-        display: grid;
-        grid-auto-flow: row;
-        justify-items: start;
-      }
+  summary {
+    font-size: 1.02rem;
+  }
 
-      .law-list-box {
-        margin-left: 0;
-      }
-    }
+  .footer-badges {
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: start;
+  }
+
+  .law-list-box {
+    margin-left: 0;
+  }
+}
   </style>
 </head>
 <body>
