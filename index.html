@@ -582,6 +582,7 @@
     }
 
     @media (max-width: 640px) {
+ @media (max-width: 640px) {
   .container {
     width: min(calc(100% - 24px), var(--max));
   }
@@ -595,74 +596,20 @@
     align-items: stretch;
   }
 
-    .split {
-    gap: 28px;
-  }
-  /* Minder ruimte tussen secties */
   .section {
-    padding: 28px 0;
+    padding: 24px 0;
   }
 
-  /* Minder ruimte tussen tekst en beeld */
   .split {
-    gap: 12px;
+    gap: 10px;
   }
 
-  /* Foto zo strak mogelijk */
-  .visual-card {
-    min-height: auto;
-    padding: 0;
-    margin: 0;
-  }
-
-  .visual-card--plain {
-    margin: 6px 0 0;
-  }
-
-  /* BELANGRIJK: titel dichter bij vorige blok */
-  h2 {
-    margin-top: 8px;
-    margin-bottom: 10px;
-  }
-
-  /* tekstblokken compacter */
-  p {
-    margin-bottom: 10px;
-  }
   .split > .content-block {
     order: 1;
   }
-  .section {
-    padding: 36px 0;
-  }
 
-  .split {
-    gap: 18px;
-  }
-
-  .visual-card {
-    min-height: auto;
-    padding: 0;
-  }
-
-  .visual-card--plain {
-    margin: 8px 0 4px;
-  }
-
-  .visual-img {
-    border-radius: 20px;
-  }
   .split > .visual-card {
     order: 2;
-  }
-
-  .visual-card--plain {
-    margin-top: 0;
-  }
-
-  .visual-img--narrow,
-  .visual-img--monitor {
-    max-width: 100%;
   }
 
   .btn {
@@ -690,7 +637,35 @@
     font-size: 1.6rem;
   }
 
-  .visual-card,
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  .visual-card {
+    min-height: auto;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .visual-card--plain {
+    margin: 0;
+  }
+
+  .visual-img,
+  .visual-img--narrow,
+  .visual-img--monitor {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+  }
+
   .footer-card {
     padding: 24px;
   }
@@ -708,6 +683,7 @@
   .law-list-box {
     margin-left: 0;
   }
+}
 }
   </style>
 </head>
