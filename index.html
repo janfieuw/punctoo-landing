@@ -57,38 +57,19 @@
       padding: 68px 0;
     }
 
-    .eyebrow {
-      display: inline-block;
-      margin-bottom: 18px;
-      padding: 6px 10px;
-      background: var(--green-soft);
-      color: var(--green-dark);
-      font-size: 0.98rem;
-      font-weight: 600;
-      line-height: 1.1;
-      border-radius: 8px;
-    }
-
-    h1,
-    h2,
-    h3 {
+    h1, h2, h3 {
       margin: 0 0 14px;
       font-weight: 600;
       line-height: 0.98;
       letter-spacing: -0.045em;
-      color: var(--text);
-      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
-      font-stretch: condensed;
     }
 
     h1 {
       font-size: clamp(1.6rem, 4.8vw, 2.7rem);
-      max-width: 8ch;
     }
 
     h2 {
       font-size: clamp(2rem, 3vw, 3.15rem);
-      max-width: 15ch;
     }
 
     p {
@@ -97,114 +78,25 @@
       color: var(--muted);
     }
 
-    strong { color: var(--text); }
-
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 12px;
       min-height: 54px;
       padding: 0 24px;
-      border: 1px solid transparent;
       border-radius: 999px;
       font-size: 0.78rem;
       font-weight: 800;
-      letter-spacing: 0.11em;
       text-transform: uppercase;
-      white-space: nowrap;
     }
 
     .btn-primary {
       background: var(--yellow);
-      color: #231f00;
-      border-color: var(--yellow);
-    }
-
-    .btn-primary:hover {
-      background: var(--yellow-dark);
-      border-color: var(--yellow-dark);
     }
 
     .btn-secondary {
       background: var(--green);
       color: white;
-      border-color: var(--green);
-    }
-
-    .btn-secondary:hover {
-      background: var(--green-dark);
-      border-color: var(--green-dark);
-    }
-
-    .btn-light {
-      background: var(--surface-soft);
-      color: var(--text);
-      border-color: rgba(37, 37, 33, 0.06);
-    }
-
-    .btn-light:hover {
-      background: #e2e2dc;
-    }
-
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 40;
-      background: rgba(243, 243, 240, 0.94);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(37, 37, 33, 0.05);
-    }
-
-    .site-header__inner {
-      min-height: 88px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 18px;
-    }
-
-    .logo {
-      display: inline-flex;
-      align-items: center;
-    }
-
-    .logo img {
-      height: 42px;
-      width: auto;
-      display: block;
-    }
-
-    .site-nav {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      flex-wrap: wrap;
-    }
-
-    .site-nav__links {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    .site-nav__links a {
-      display: inline-flex;
-      align-items: center;
-      min-height: 42px;
-      padding: 0 14px;
-      border-radius: 999px;
-      color: var(--muted);
-      font-size: 0.95rem;
-      font-weight: 600;
-    }
-
-    .site-nav__links a:hover,
-    .site-nav__links a:focus-visible {
-      background: rgba(37, 37, 33, 0.05);
-      color: var(--text);
-      outline: none;
     }
 
     .hero {
@@ -217,621 +109,84 @@
       background: var(--surface);
       border-radius: var(--radius-xl);
       overflow: hidden;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(37, 37, 33, 0.05);
     }
 
+    /* ✅ AANGEPAST */
     .hero-media {
       min-height: 410px;
       position: relative;
-      background: url('images/image11.png') center/cover no-repeat;
-    }
-
-    .hero-copy {
-      padding: 40px 26px 36px 26px;
-      background: var(--green);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      font-size: 0.8em;
-    }
-
-    .hero-copy h1,
-    .hero-copy strong {
-      color: white;
-    }
-
-    .hero-copy h1 {
-      max-width: 12ch;
-      margin: 0;
-      font-size: clamp(1.5rem, 3.2vw, 2.15rem);
-      font-weight: 900;
-      line-height: 0.98;
-      letter-spacing: -0.045em;
-      text-transform: none;
-      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
-      font-stretch: condensed;
-    }
-
-    .hero-copy p,
-    .hero-copy .muted-note {
-      color: rgba(255,255,255,0.92);
-      max-width: 52ch;
-    }
-
-    .hero-copy .muted-note {
-      margin: 26px 0 0;
-      font-size: 0.9rem;
-      font-weight: 600;
-      letter-spacing: -0.01em;
-    }
-
-    .hero-price-line {
-      margin: 18px 0 0;
-      max-width: 14ch;
-      font-size: clamp(1.5rem, 3.2vw, 2.15rem);
-      font-weight: 900;
-      line-height: 0.98;
-      letter-spacing: -0.045em;
-      text-transform: none;
-      color: white;
-      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
-      font-stretch: condensed;
-    }
-
-    .hero-price-chip {
-      display: inline-block;
-      padding: 0 4px;
-      background: #0f69a9;
-      color: white;
-      line-height: 1.02;
-    }
-
-    .hero-copy__top {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      align-items: flex-start;
-    }
-
-    .quick-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-      gap: 14px;
-      padding-top: 20px;
-    }
-
-    .footer-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      align-items: center;
-    }
-
-    .content-block { max-width: 560px; }
-
-    .quote {
-      margin-top: 10px;
-      padding-left: 18px;
-      border-left: 3px solid rgba(37, 37, 33, 0.14);
-    }
-
-    .visual-card {
-      min-height: 360px;
-      padding: 28px;
-      display: grid;
-      place-items: center;
-      background: var(--surface);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(37, 37, 33, 0.05);
-    }
-
-    .visual-card--plain {
-      padding: 0;
-      background: transparent;
-      border: 0;
-      box-shadow: none;
-      min-height: auto;
-    }
-
-    .visual-img {
-      width: 100%;
-      max-width: 420px;
-      height: auto;
-      display: block;
-      border-radius: 28px;
-    }
-
-    .visual-img--narrow {
-      max-width: 590px;
-    }
-
-    .visual-img--monitor {
-      max-width: 590px;
-    }
-
-    .cta-strip { padding-top: 8px; }
-
-    .law-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      align-items: start;
-    }
-
-    .law-copy { max-width: 690px; }
-
-    .law-intro {
-      margin-top: 10px;
-    }
-
-    .law-list-box {
-  background: rgba(222, 236, 241, 0.85);
-  padding: 14px 18px;
-  margin: 16px 0 18px 16px;
-  border-radius: 20px;
-  box-shadow: var(--shadow);
-}
-
-    .law-list-box ul {
-      margin: 0;
-      padding-left: 18px;
-      color: var(--text);
-    }
-
-    .law-list-box li {
-      margin: 0 0 10px 0;
-      color: var(--text);
-    }
-
-    .law-list-box li strong {
-      display: block;
-      margin-bottom: 2px;
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    .law-list-box li span {
-      display: block;
-      color: var(--text);
-      font-size: 0.78rem;
-      line-height: 1.5;
-    }
-
-    .people-shot img {
-      width: 100%;
-      max-width: 590px;
-      height: auto;
-      display: block;
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow);
-    }
-
-    .faq-wrap { max-width: 860px; }
-
-    .faq {
-      display: grid;
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    details {
-      background: var(--surface);
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-      border: 1px solid rgba(37, 37, 33, 0.05);
       overflow: hidden;
     }
 
-    summary {
-      list-style: none;
-      cursor: pointer;
-      position: relative;
-      padding: 22px 58px 22px 24px;
-      font-size: 1.12rem;
-      font-weight: 700;
-      color: var(--text);
-    }
-
-    summary::-webkit-details-marker { display: none; }
-
-    summary::after {
-      content: "+";
-      position: absolute;
-      right: 22px;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 1.5rem;
-      line-height: 1;
-      color: var(--green-dark);
-      font-weight: 500;
-    }
-
-    details[open] summary::after { content: "–"; }
-
-    .faq__body { padding: 0 24px 22px; }
-
-    .footer {
-      padding: 28px 0 60px;
-    }
-
-    .footer-card {
-      background: #e7e7e4;
-      border-radius: 34px;
-      padding: 36px;
-      display: grid;
-      grid-template-columns: 1.15fr auto;
-      gap: 28px;
-      align-items: start;
-      border: 1px solid rgba(37, 37, 33, 0.04);
-    }
-
-    .footer-copy { max-width: 560px; }
-
-    .footer-copy p { margin-bottom: 18px; }
-
-    .footer-badges {
-      display: grid;
-      gap: 16px;
-      align-content: start;
-      justify-items: end;
-    }
-
-    .footer-badge-img {
-      width: 110px;
-      height: auto;
+    .hero-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left center;
       display: block;
     }
 
-    .section-anchor {
-      position: relative;
-      top: -120px;
-      visibility: hidden;
-      display: block;
-      height: 0;
+    .hero-copy {
+      padding: 40px 26px;
+      background: var(--green);
+      color: white;
     }
 
-    .back-to-top {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 46px;
-      height: 46px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: var(--surface);
-      border: 1px solid rgba(37, 37, 33, 0.08);
-      box-shadow: var(--shadow);
-      font-size: 1.2rem;
-      font-weight: 700;
-      color: var(--green-dark);
+    .hero-price-line {
+      font-size: clamp(1.5rem, 3.2vw, 2.15rem);
+      font-weight: 900;
     }
 
-    .section-header {
-      position: relative;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .section-header h2 { margin-bottom: 0; }
-
-    .muted-small {
-      font-size: 0.94rem;
-      color: var(--muted);
+    .hero-price-chip {
+      background: #0f69a9;
+      padding: 0 4px;
     }
 
     @media (max-width: 1080px) {
-      .hero-card,
-      .split,
-      .law-grid,
-      .footer-card {
+      .hero-card {
         grid-template-columns: 1fr;
-      }
-
-      .hero-media {
-        min-height: 420px;
-      }
-
-      .quick-links {
-        justify-content: flex-start;
-      }
-
-      .footer-badges {
-        justify-items: start;
-        grid-auto-flow: column;
-      }
-    }
-
-    @media (max-width: 820px) {
-      .site-header__inner {
-        align-items: flex-start;
-        flex-direction: column;
-        padding: 16px 0;
-      }
-
-      .site-nav {
-        width: 100%;
-        justify-content: space-between;
-      }
-
-      .section {
-        padding: 54px 0;
-      }
-
-      .hero-copy {
-        padding: 34px 24px 30px;
-      }
-
-      .hero-copy h1,
-      .hero-price-line {
-        max-width: none;
-      }
-    }
-
-    @media (max-width: 640px) {
-      .container {
-        width: min(calc(100% - 24px), var(--max));
-      }
-
-      .site-nav,
-      .site-nav__links,
-      .quick-links,
-      .footer-actions,
-      .footer-badges {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .btn {
-        width: 100%;
-      }
-
-      .hero-media {
-        min-height: 300px;
-      }
-
-      .hero-copy h1,
-      .hero-price-line {
-        font-size: 1.6rem;
-      }
-
-      .visual-card,
-      .footer-card {
-        padding: 24px;
-      }
-
-      summary {
-        font-size: 1.02rem;
-      }
-
-      .footer-badges {
-        display: grid;
-        grid-auto-flow: row;
-        justify-items: start;
-      }
-
-      .law-list-box {
-        margin-left: 0;
       }
     }
   </style>
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a href="#top" class="logo" aria-label="Punctoo home">
-        <img src="images/logo-punctooo.png" alt="Punctoo logo">
-      </a>
 
-      <div class="site-nav">
-        <a href="#contact" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
+<header class="site-header">
+  <div class="container site-header__inner">
+    <img src="images/logo-punctooo.png" height="42">
+    <a href="#contact" class="btn btn-primary">Start abonnement →</a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-card">
+
+      <!-- ✅ NIEUWE STRUCTUUR -->
+      <div class="hero-media">
+        <img src="images/image11.png" alt="Hero afbeelding" class="hero-img">
       </div>
+
+      <div class="hero-copy">
+        <p class="hero-price-line">
+          Vanaf 01/01/2027 is elk bedrijf verplicht om arbeidstijd te registreren.
+        </p>
+
+        <p class="hero-price-line">
+          Voor <span class="hero-price-chip">240 euro/jaar</span> ben je in orde.
+        </p>
+
+        <p>Prijs zonder btw.</p>
+      </div>
+
     </div>
-  </header>
+  </div>
+</section>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container">
-        <div class="hero-card">
-          <div class="hero-media" aria-label="Hero afbeelding"></div>
+</main>
 
-          <div class="hero-copy">
-            <div class="hero-copy__top">
-              <p class="hero-price-line">Vanaf 01/01/2027 is elk bedrijf verplicht om de arbeidstijd te registreren van zijn werknemers.</p>
-              <p class="hero-price-line">Voor <span class="hero-price-chip">240 euro/jaar</span> ben je met Punctoo gemakkelijk 100% in orde.</p>
-              <p class="muted-note">Prijs zonder btw.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="quick-links">
-          <a href="#arbeidswet" class="btn btn-secondary">Vertel mij meer over de vernieuwde wet →</a>
-          <a href="#veelgestelde-vragen" class="btn btn-secondary">Vaak gestelde vragen over de werking van Punctoo →</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split">
-        <div class="content-block">
-          <h2>De scan tag</h2>
-          <p class="eyebrow">Registratie terugbrengen tot een natuurlijke reflex.</p>
-          <div class="quote">
-            <p>Maak registratie opnieuw fysiek aanwezig op de werkvloer — herkenbaar zoals de klassieke prikklok, maar in een moderne en eenvoudige vorm.</p>
-            <p>Zo wordt registratie geen extra taak, maar een vanzelfsprekende reflex binnen het dagelijkse ritme. De Scan Tag is inbegrepen in het abonnement.</p>
-          </div>
-        </div>
-
-        <div class="visual-card visual-card--plain">
-          <img src="images/image4.png" alt="Scan tag" class="visual-img visual-img--narrow">
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split">
-        <div class="visual-card visual-card--plain">
-          <img src="images/image3.png" alt="App voorbeeld" class="visual-img visual-img--narrow">
-        </div>
-
-        <div class="content-block">
-          <h2>Eenvoudig voldoen aan de wet</h2>
-          <p class="eyebrow">Ontzorgen van de werkgever.</p>
-          <div class="quote">
-            <p>Geen bijkomende administratie of opvolging, maar een systeem dat vanzelf werkt en de nodige rapportering beschikbaar maakt wanneer dat nodig is.</p>
-            <p>Zo blijft de werkgever compliant zonder dat de dagelijkse werking wordt verstoord.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container split">
-        <div class="content-block">
-          <h2>Flexibiliteit en glijdende werkuren</h2>
-          <p class="eyebrow">Verwachting versus realiteit.</p>
-          <div class="quote">
-            <p>Punctoo vergelijkt elke werkdag met de verwachte aanwezigheidsduur en laat ruimte voor het klassieke geven en nemen: even wat langer werken wordt transparant gecompenseerd door later wat vroeger te stoppen.</p>
-            <p>Binnen glijdende werkuren blijft die flexibiliteit behouden, terwijl de referentietijd als duidelijke basis dient voor objectieve opvolging.</p>
-          </div>
-        </div>
-
-        <div class="visual-card visual-card--plain">
-          <img src="images/image5.png" alt="Monitor rapportering" class="visual-img visual-img--monitor">
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta-strip">
-      <div class="container">
-        <a href="#contact" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
-        <div style="margin-top:18px;">
-          <p class="muted-small">
-            Tijdens de testperiode scan je eenvoudig de QR-codes die je kunt downloaden.
-            <br>Na 14 dagen zal gevraagd worden om het abonnement te activeren.
-            <br>Pas na activatie volgt uitnodiging tot betalen.
-            <br>Na ontvangst van de betaling sturen we de definitieve scan tag op.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <span id="arbeidswet" class="section-anchor" aria-hidden="true"></span>
-    <section class="section" aria-labelledby="arbeidswet-titel">
-      <div class="container law-grid">
-        <div class="law-copy">
-          <div class="section-header">
-            <h2 id="arbeidswet-titel">De vernieuwde arbeidswet</h2>
-            <a href="#top" class="back-to-top" aria-label="Terug naar boven">↑</a>
-          </div>
-
-          <p class="eyebrow">Eenvoudig 100% in orde met Punctoo.</p>
-
-          <div class="quote law-intro">
-            <p>Vanaf 1 januari 2027 wordt arbeidstijdregistratie verplicht voor alle ondernemingen.<br>Hoewel nog niet alle details bekend zijn weten we wel al de basisregels.</p>
-          </div>
-
-          <div class="law-list-box">
-            <ul>
-              <li>
-                <strong>Een basisregistratie van arbeidstijd</strong>
-                <span>Een duidelijke registratie van wanneer werknemers starten en stoppen met werken.</span>
-              </li>
-              <li>
-                <strong>Betrouwbaarheid en onveranderlijkheid</strong>
-                <span>De gegevens moeten correct zijn en achteraf niet manipuleerbaar.</span>
-              </li>
-              <li>
-                <strong>Transparantie over prestaties</strong>
-                <span>Afwijkingen, overuren en onregelmatigheden moeten zichtbaar en verklaarbaar zijn.</span>
-              </li>
-              <li>
-                <strong>Bewaarplicht van gegevens</strong>
-                <span>De registraties moeten gedurende een bepaalde periode veilig bewaard worden, bij voorkeur op een beveiligde server.</span>
-              </li>
-              <li>
-                <strong>Aantoonbaarheid bij controle</strong>
-                <span>Bij inspectie moet je de gegevens eenvoudig kunnen voorleggen.</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="quote">
-            <p>Het is vanuit deze essentie dat Punctoo werd ontwikkeld: hoe kunnen we zo eenvoudig mogelijk voldoen aan deze regels en administratieve overlast vermijden.</p>
-          </div>
-        </div>
-
-        <div class="people-shot">
-          <img src="images/image666.png" alt="Team op kantoor">
-        </div>
-      </div>
-    </section>
-
-    <span id="veelgestelde-vragen" class="section-anchor" aria-hidden="true"></span>
-    <section class="section" aria-labelledby="faq-titel">
-      <div class="container faq-wrap">
-        <div class="section-header">
-          <h2 id="faq-titel">Veelgestelde vragen</h2>
-          <a href="#top" class="back-to-top" aria-label="Terug naar boven">↑</a>
-        </div>
-        <div class="faq">
-          <details open>
-            <summary>Mijn werkgever vergeet toch te scannen. Wat nu?</summary>
-            <div class="faq__body">
-              <p>Plaats hier je echte antwoord. Bijvoorbeeld: Punctoo voorziet automatische fall-backs en onregelmatigheden worden zichtbaar in de rapportering, zodat ontbrekende scans eenvoudig kunnen worden opgevolgd.</p>
-            </div>
-          </details>
-
-          <details>
-            <summary>Is dit bruikbaar met glijdende uren?</summary>
-            <div class="faq__body">
-              <p>Ja. De registratie vertrekt vanuit referentietijden, waardoor flexibiliteit behouden blijft en afwijkingen toch objectief en transparant opgevolgd kunnen worden.</p>
-            </div>
-          </details>
-
-          <details>
-            <summary>Moet ik een app installeren?</summary>
-            <div class="faq__body">
-              <p>Dat hangt af van je gekozen flow. In deze starter is de nadruk gelegd op een eenvoudige scanhandeling op de werkvloer, zonder zware onboarding of complexe software.</p>
-            </div>
-          </details>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer" id="contact">
-    <div class="container">
-      <div class="footer-card">
-        <div class="footer-copy">
-          <p><strong>Punctoo</strong> is een applicatie van VDGI Software ontwikkeling.</p>
-          <p>VDGI BV<br>Zwaluwstraat 18<br>9940 Ertvelde<br>BE 0.752.607.756<br><strong>info@punctoo.be</strong></p>
-
-          <div class="footer-actions">
-            <a href="#" class="btn btn-light">Cookie beleid →</a>
-            <a href="#" class="btn btn-light">Privacy verklaring →</a>
-          </div>
-        </div>
-
-        <div class="footer-badges">
-          <img src="images/image7.png" alt="Audited badge" class="footer-badge-img">
-          <img src="images/image8.png" alt="Secured server badge" class="footer-badge-img">
-          <img src="images/image9.png" alt="GDPR compliant badge" class="footer-badge-img">
-        </div>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>

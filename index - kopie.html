@@ -224,7 +224,7 @@
     .hero-media {
       min-height: 410px;
       position: relative;
-      background: url('images/image1.png') center/cover no-repeat;
+      background: url('images/image11.png') center/cover no-repeat;
     }
 
     .hero-copy {
@@ -365,10 +365,47 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 56px;
-      align-items: center;
+      align-items: start;
     }
 
-    .law-copy { max-width: 590px; }
+    .law-copy { max-width: 690px; }
+
+    .law-intro {
+      margin-top: 10px;
+    }
+
+    .law-list-box {
+  background: rgba(222, 236, 241, 0.85);
+  padding: 14px 18px;
+  margin: 16px 0 18px 16px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+    .law-list-box ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--text);
+    }
+
+    .law-list-box li {
+      margin: 0 0 10px 0;
+      color: var(--text);
+    }
+
+    .law-list-box li strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .law-list-box li span {
+      display: block;
+      color: var(--text);
+      font-size: 0.78rem;
+      line-height: 1.5;
+    }
 
     .people-shot img {
       width: 100%;
@@ -450,7 +487,7 @@
     }
 
     .footer-badge-img {
-      width: 76px;
+      width: 110px;
       height: auto;
       display: block;
     }
@@ -584,6 +621,10 @@
         grid-auto-flow: row;
         justify-items: start;
       }
+
+      .law-list-box {
+        margin-left: 0;
+      }
     }
   </style>
 </head>
@@ -594,8 +635,7 @@
         <img src="images/logo-punctooo.png" alt="Punctoo logo">
       </a>
 
-      
-
+      <div class="site-nav">
         <a href="#contact" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
       </div>
     </div>
@@ -678,11 +718,12 @@
       <div class="container">
         <a href="#contact" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
         <div style="margin-top:18px;">
-          <p class="muted-small">Tijdens de testperiode scan je eenvoudig de QR-codes die je kunt downloaden. 
-            <br>Na 14 dagen zal gevraagd worden om het abonnement te activeren. 
+          <p class="muted-small">
+            Tijdens de testperiode scan je eenvoudig de QR-codes die je kunt downloaden.
+            <br>Na 14 dagen zal gevraagd worden om het abonnement te activeren.
             <br>Pas na activatie volgt uitnodiging tot betalen.
-          <br>Na ontvangst van de betaling sturen we de definitieve scan tag op.</p>
-
+            <br>Na ontvangst van de betaling sturen we de definitieve scan tag op.
+          </p>
         </div>
       </div>
     </section>
@@ -695,21 +736,45 @@
             <h2 id="arbeidswet-titel">De vernieuwde arbeidswet</h2>
             <a href="#top" class="back-to-top" aria-label="Terug naar boven">↑</a>
           </div>
+
           <p class="eyebrow">Eenvoudig 100% in orde met Punctoo.</p>
-          <div class="quote">
-            <p>Vanaf 1 januari 2027 wordt arbeidstijdregistratie verplicht voor alle ondernemingen.</p>
-            
+
+          <div class="quote law-intro">
+            <p>Vanaf 1 januari 2027 wordt arbeidstijdregistratie verplicht voor alle ondernemingen.<br>Hoewel nog niet alle details bekend zijn weten we wel al de basisregels.</p>
           </div>
-          <div class="quote">
-            <p>Hoewel de details op vandaag nog niet gekend zijn kunnen wèl al de essentie geven: een betrouwbare en onveranderlijke basisregistratie van start- en stoptijden, transparantie over overwerk en de mogelijkheid om dit bij controle aan te tonen. Het is daarbij aangewezen om deze gegevens te bewaren op een beveiligde server.</p>
+
+          <div class="law-list-box">
+            <ul>
+              <li>
+                <strong>Een basisregistratie van arbeidstijd</strong>
+                <span>Een duidelijke registratie van wanneer werknemers starten en stoppen met werken.</span>
+              </li>
+              <li>
+                <strong>Betrouwbaarheid en onveranderlijkheid</strong>
+                <span>De gegevens moeten correct zijn en achteraf niet manipuleerbaar.</span>
+              </li>
+              <li>
+                <strong>Transparantie over prestaties</strong>
+                <span>Afwijkingen, overuren en onregelmatigheden moeten zichtbaar en verklaarbaar zijn.</span>
+              </li>
+              <li>
+                <strong>Bewaarplicht van gegevens</strong>
+                <span>De registraties moeten gedurende een bepaalde periode veilig bewaard worden, bij voorkeur op een beveiligde server.</span>
+              </li>
+              <li>
+                <strong>Aantoonbaarheid bij controle</strong>
+                <span>Bij inspectie moet je de gegevens eenvoudig kunnen voorleggen.</span>
+              </li>
+            </ul>
           </div>
+
           <div class="quote">
             <p>Het is vanuit deze essentie dat Punctoo werd ontwikkeld: hoe kunnen we zo eenvoudig mogelijk voldoen aan deze regels en administratieve overlast vermijden.</p>
           </div>
         </div>
 
         <div class="people-shot">
-          <img src="images/image66.png" alt="Team op kantoor">
+          <img src="images/image666.png" alt="Team op kantoor">
         </div>
       </div>
     </section>
@@ -752,7 +817,7 @@
       <div class="footer-card">
         <div class="footer-copy">
           <p><strong>Punctoo</strong> is een applicatie van VDGI Software ontwikkeling.</p>
-          <p>VDGI BV<br>Zwaluwstraat 18<br>9940 Ertvelde<br>BE 0.168.547.930<br><strong>info@punctoo.be</strong></p>
+          <p>VDGI BV<br>Zwaluwstraat 18<br>9940 Ertvelde<br>BE 0.752.607.756<br><strong>info@punctoo.be</strong></p>
 
           <div class="footer-actions">
             <a href="#" class="btn btn-light">Cookie beleid →</a>
