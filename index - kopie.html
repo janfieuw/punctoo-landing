@@ -73,7 +73,7 @@
     h2,
     h3 {
       margin: 0 0 14px;
-      font-weight: 900;
+      font-weight: 600;
       line-height: 0.98;
       letter-spacing: -0.045em;
       color: var(--text);
@@ -82,8 +82,8 @@
     }
 
     h1 {
-      font-size: clamp(2.4rem, 4.8vw, 4.7rem);
-      max-width: 11ch;
+      font-size: clamp(1.6rem, 4.8vw, 2.7rem);
+      max-width: 8ch;
     }
 
     h2 {
@@ -222,7 +222,7 @@
     }
 
     .hero-media {
-      min-height: 510px;
+      min-height: 410px;
       position: relative;
       background: url('images/image1.png') center/cover no-repeat;
     }
@@ -233,7 +233,8 @@
       color: white;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: flex-start;
+      font-size: 0.8em;
     }
 
     .hero-copy h1,
@@ -242,13 +243,15 @@
     }
 
     .hero-copy h1 {
-      max-width: 18ch;
+      max-width: 12ch;
       margin: 0;
-      font-size: clamp(1.4rem, 2.2vw, 2rem);
-      font-weight: 800;
-      line-height: 1.2;
-      letter-spacing: -0.02em;
-      text-transform: uppercase;
+      font-size: clamp(1.5rem, 3.2vw, 2.15rem);
+      font-weight: 900;
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      text-transform: none;
+      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
+      font-stretch: condensed;
     }
 
     .hero-copy p,
@@ -258,21 +261,23 @@
     }
 
     .hero-copy .muted-note {
-      margin: 0;
+      margin: 26px 0 0;
       font-size: 0.9rem;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: -0.01em;
     }
 
     .hero-price-line {
       margin: 18px 0 0;
-      max-width: 28ch;
-      font-size: clamp(1.1rem, 1.6vw, 1.4rem);
-      font-weight: 800;
-      line-height: 1.3;
-      letter-spacing: -0.015em;
-      text-transform: uppercase;
+      max-width: 14ch;
+      font-size: clamp(1.5rem, 3.2vw, 2.15rem);
+      font-weight: 900;
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      text-transform: none;
       color: white;
+      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
+      font-stretch: condensed;
     }
 
     .hero-price-chip {
@@ -286,30 +291,22 @@
     .hero-copy__top {
       display: flex;
       flex-direction: column;
-      gap: 12px;
-    }
-
-    .hero-copy__bottom {
-      display: flex;
-      flex-direction: column;
-      gap: 18px;
+      gap: 0;
       align-items: flex-start;
-      margin-top: 28px;
     }
 
-    .hero-actions,
-    .quick-links,
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 14px;
+      padding-top: 20px;
+    }
+
     .footer-actions {
       display: flex;
       flex-wrap: wrap;
       gap: 14px;
-    }
-
-    .hero-actions { margin-top: 18px; }
-
-    .quick-links {
-      justify-content: flex-end;
-      padding-top: 20px;
     }
 
     .split {
@@ -375,7 +372,7 @@
 
     .people-shot img {
       width: 100%;
-      max-width: 420px;
+      max-width: 590px;
       height: auto;
       display: block;
       border-radius: var(--radius-xl);
@@ -553,7 +550,6 @@
 
       .site-nav,
       .site-nav__links,
-      .hero-actions,
       .quick-links,
       .footer-actions,
       .footer-badges {
@@ -569,12 +565,9 @@
         min-height: 300px;
       }
 
-      .hero-copy h1 {
-        font-size: 2rem;
-      }
-
+      .hero-copy h1,
       .hero-price-line {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
 
       .visual-card,
@@ -601,13 +594,9 @@
         <img src="images/logo-punctooo.png" alt="Punctoo logo">
       </a>
 
-      <div class="site-nav">
-        <nav class="site-nav__links" aria-label="Snelle navigatie">
-          <a href="#arbeidswet">De vernieuwde arbeidswet</a>
-          <a href="#veelgestelde-vragen">Veelgestelde vragen</a>
-        </nav>
+      
 
-        <a href="#contact" class="btn btn-primary">Abonnement starten →</a>
+        <a href="#contact" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
       </div>
     </div>
   </header>
@@ -620,23 +609,16 @@
 
           <div class="hero-copy">
             <div class="hero-copy__top">
-              <h1>Vanaf 01/01/2027 is elk bedrijf verplicht om de arbeidstijd te registreren van zijn werknemers.</h1>
-              <p class="hero-price-line">Voor <span class="hero-price-chip">240 euro/jaar</span> ben je met Punctoo gemakkelijk zonder zorgen.</p>
-            </div>
-
-            <div class="hero-copy__bottom">
+              <p class="hero-price-line">Vanaf 01/01/2027 is elk bedrijf verplicht om de arbeidstijd te registreren van zijn werknemers.</p>
+              <p class="hero-price-line">Voor <span class="hero-price-chip">240 euro/jaar</span> ben je met Punctoo gemakkelijk 100% in orde.</p>
               <p class="muted-note">Prijs zonder btw.</p>
-              <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary">Start met 14 dagen bedenktijd →</a>
-                <a href="#arbeidswet" class="btn btn-light">Lees meer over de wet</a>
-              </div>
             </div>
           </div>
         </div>
 
         <div class="quick-links">
-          <a href="#arbeidswet" class="btn btn-secondary">De vernieuwde arbeidswet →</a>
-          <a href="#veelgestelde-vragen" class="btn btn-secondary">Veelgestelde vragen →</a>
+          <a href="#arbeidswet" class="btn btn-secondary">Vertel mij meer over de vernieuwde wet →</a>
+          <a href="#veelgestelde-vragen" class="btn btn-secondary">Vaak gestelde vragen over de werking van Punctoo →</a>
         </div>
       </div>
     </section>
@@ -696,8 +678,11 @@
       <div class="container">
         <a href="#contact" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
         <div style="margin-top:18px;">
-          <p class="muted-small">Na 14 dagen zal gevraagd worden om het abonnement te activeren.</p>
-          <p class="muted-small">Pas na activatie volgt uitnodiging tot betalen.</p>
+          <p class="muted-small">Tijdens de testperiode scan je eenvoudig de QR-codes die je kunt downloaden. 
+            <br>Na 14 dagen zal gevraagd worden om het abonnement te activeren. 
+            <br>Pas na activatie volgt uitnodiging tot betalen.
+          <br>Na ontvangst van de betaling sturen we de definitieve scan tag op.</p>
+
         </div>
       </div>
     </section>
@@ -712,11 +697,14 @@
           </div>
           <p class="eyebrow">Eenvoudig 100% in orde met Punctoo.</p>
           <div class="quote">
-            <p>Geen bijkomende administratie of opvolging, maar een systeem dat vanzelf werkt en de nodige rapportering beschikbaar maakt wanneer dat nodig is.</p>
-            <p>Zo blijft de werkgever compliant zonder dat de dagelijkse werking wordt verstoord.</p>
+            <p>Vanaf 1 januari 2027 wordt arbeidstijdregistratie verplicht voor alle ondernemingen.</p>
+            
           </div>
           <div class="quote">
-            <p>Gebruik deze sectie later voor je echte juridische samenvatting, extra voordelen of een beknopte toelichting per doelgroep.</p>
+            <p>Hoewel de details op vandaag nog niet gekend zijn kunnen wèl al de essentie geven: een betrouwbare en onveranderlijke basisregistratie van start- en stoptijden, transparantie over overwerk en de mogelijkheid om dit bij controle aan te tonen. Het is daarbij aangewezen om deze gegevens te bewaren op een beveiligde server.</p>
+          </div>
+          <div class="quote">
+            <p>Het is vanuit deze essentie dat Punctoo werd ontwikkeld: hoe kunnen we zo eenvoudig mogelijk voldoen aan deze regels en administratieve overlast vermijden.</p>
           </div>
         </div>
 

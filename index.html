@@ -365,10 +365,45 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 56px;
-      align-items: center;
+      align-items: start;
     }
 
-    .law-copy { max-width: 590px; }
+    .law-copy { max-width: 690px; }
+
+    .law-intro {
+      margin-top: 10px;
+    }
+
+    .law-list-box {
+      background: rgba(255,255,255,0.75);
+      padding: 8px 18px 2px 18px;
+      margin: 16px 0 18px 16px;
+    }
+
+    .law-list-box ul {
+      margin: 0;
+      padding-left: 24px;
+      color: var(--text);
+    }
+
+    .law-list-box li {
+      margin: 0 0 10px 0;
+      color: var(--text);
+    }
+
+    .law-list-box li strong {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .law-list-box li span {
+      display: block;
+      color: var(--text);
+      font-size: 0.98rem;
+      line-height: 1.5;
+    }
 
     .people-shot img {
       width: 100%;
@@ -584,6 +619,10 @@
         grid-auto-flow: row;
         justify-items: start;
       }
+
+      .law-list-box {
+        margin-left: 0;
+      }
     }
   </style>
 </head>
@@ -594,8 +633,7 @@
         <img src="images/logo-punctooo.png" alt="Punctoo logo">
       </a>
 
-      
-
+      <div class="site-nav">
         <a href="#contact" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
       </div>
     </div>
@@ -678,11 +716,12 @@
       <div class="container">
         <a href="#contact" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
         <div style="margin-top:18px;">
-          <p class="muted-small">Tijdens de testperiode scan je eenvoudig de QR-codes die je kunt downloaden. 
-            <br>Na 14 dagen zal gevraagd worden om het abonnement te activeren. 
+          <p class="muted-small">
+            Tijdens de testperiode scan je eenvoudig de QR-codes die je kunt downloaden.
+            <br>Na 14 dagen zal gevraagd worden om het abonnement te activeren.
             <br>Pas na activatie volgt uitnodiging tot betalen.
-          <br>Na ontvangst van de betaling sturen we de definitieve scan tag op.</p>
-
+            <br>Na ontvangst van de betaling sturen we de definitieve scan tag op.
+          </p>
         </div>
       </div>
     </section>
@@ -695,14 +734,38 @@
             <h2 id="arbeidswet-titel">De vernieuwde arbeidswet</h2>
             <a href="#top" class="back-to-top" aria-label="Terug naar boven">↑</a>
           </div>
+
           <p class="eyebrow">Eenvoudig 100% in orde met Punctoo.</p>
-          <div class="quote">
+
+          <div class="quote law-intro">
             <p>Vanaf 1 januari 2027 wordt arbeidstijdregistratie verplicht voor alle ondernemingen.</p>
-            
           </div>
-          <div class="quote">
-            <p>Hoewel de details op vandaag nog niet gekend zijn kunnen wèl al de essentie geven: een betrouwbare en onveranderlijke basisregistratie van start- en stoptijden, transparantie over overwerk en de mogelijkheid om dit bij controle aan te tonen. Het is daarbij aangewezen om deze gegevens te bewaren op een beveiligde server.</p>
+
+          <div class="law-list-box">
+            <ul>
+              <li>
+                <strong>Een basisregistratie van arbeidstijd</strong>
+                <span>Een duidelijke registratie van wanneer werknemers starten en stoppen met werken.</span>
+              </li>
+              <li>
+                <strong>Betrouwbaarheid en onveranderlijkheid</strong>
+                <span>De gegevens moeten correct zijn en achteraf niet manipuleerbaar.</span>
+              </li>
+              <li>
+                <strong>Transparantie over prestaties</strong>
+                <span>Afwijkingen, overuren en onregelmatigheden moeten zichtbaar en verklaarbaar zijn.</span>
+              </li>
+              <li>
+                <strong>Bewaarplicht van gegevens</strong>
+                <span>De registraties moeten gedurende een bepaalde periode veilig bewaard worden, bij voorkeur op een beveiligde server.</span>
+              </li>
+              <li>
+                <strong>Aantoonbaarheid bij controle</strong>
+                <span>Bij inspectie moet je de gegevens eenvoudig kunnen voorleggen.</span>
+              </li>
+            </ul>
           </div>
+
           <div class="quote">
             <p>Het is vanuit deze essentie dat Punctoo werd ontwikkeld: hoe kunnen we zo eenvoudig mogelijk voldoen aan deze regels en administratieve overlast vermijden.</p>
           </div>
