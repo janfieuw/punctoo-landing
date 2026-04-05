@@ -234,6 +234,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      font-size: 0.8em;
     }
 
     .hero-copy h1,
@@ -292,6 +293,14 @@
       flex-direction: column;
       gap: 0;
       align-items: flex-start;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 14px;
+      padding-top: 20px;
     }
 
     .footer-actions {
@@ -498,6 +507,10 @@
         min-height: 420px;
       }
 
+      .quick-links {
+        justify-content: flex-start;
+      }
+
       .footer-badges {
         justify-items: start;
         grid-auto-flow: column;
@@ -537,6 +550,7 @@
 
       .site-nav,
       .site-nav__links,
+      .quick-links,
       .footer-actions,
       .footer-badges {
         flex-direction: column;
@@ -604,6 +618,11 @@
               <p class="muted-note">Prijs zonder btw.</p>
             </div>
           </div>
+        </div>
+
+        <div class="quick-links">
+          <a href="#arbeidswet" class="btn btn-secondary">Vertel mij meer over de vernieuwde wet →</a>
+          <a href="#veelgestelde-vragen" class="btn btn-secondary">Vaak gestelde vragen over de werking →</a>
         </div>
       </div>
     </section>
