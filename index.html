@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Punctoo – Eenvoudige arbeidstijdregistratie</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #f3f3f0;
@@ -30,7 +35,7 @@
 
     body {
       margin: 0;
-      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      font-family: "Roboto", sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -64,7 +69,7 @@
       background: var(--green-soft);
       color: var(--green-dark);
       font-size: 0.98rem;
-      font-weight: 600;
+      font-weight: 500;
       line-height: 1.1;
       border-radius: 8px;
     }
@@ -73,12 +78,11 @@
     h2,
     h3 {
       margin: 0 0 14px;
-      font-weight: 600;
-      line-height: 0.98;
-      letter-spacing: -0.045em;
+      font-weight: 700;
+      line-height: 1.02;
+      letter-spacing: -0.025em;
       color: var(--text);
-      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
-      font-stretch: condensed;
+      font-family: "Roboto", sans-serif;
     }
 
     h1 {
@@ -109,11 +113,12 @@
       border: 1px solid transparent;
       border-radius: 999px;
       font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 0.11em;
+      font-weight: 700;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       white-space: nowrap;
       text-align: center;
+      font-family: "Roboto", sans-serif;
     }
 
     .btn-primary {
@@ -198,7 +203,7 @@
       border-radius: 999px;
       color: var(--muted);
       font-size: 0.95rem;
-      font-weight: 600;
+      font-weight: 500;
     }
 
     .site-nav__links a:hover,
@@ -248,11 +253,10 @@
       margin: 0;
       font-size: clamp(1.5rem, 3.2vw, 2.15rem);
       font-weight: 900;
-      line-height: 0.98;
-      letter-spacing: -0.045em;
+      line-height: 1.02;
+      letter-spacing: -0.025em;
       text-transform: none;
-      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
-      font-stretch: condensed;
+      font-family: "Roboto", sans-serif;
     }
 
     .hero-copy p,
@@ -264,7 +268,7 @@
     .hero-copy .muted-note {
       margin: 26px 0 0;
       font-size: 0.9rem;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: -0.01em;
     }
 
@@ -273,12 +277,11 @@
       max-width: 14ch;
       font-size: clamp(1.7rem, 2.4vw, 1.6rem);
       font-weight: 900;
-      line-height: 0.98;
-      letter-spacing: -0.045em;
+      line-height: 1.02;
+      letter-spacing: -0.025em;
       text-transform: none;
       color: white;
-      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
-      font-stretch: condensed;
+      font-family: "Roboto", sans-serif;
     }
 
     .hero-price-chip {
@@ -441,6 +444,7 @@
       font-size: 1.12rem;
       font-weight: 700;
       color: var(--text);
+      font-family: "Roboto", sans-serif;
     }
 
     summary::-webkit-details-marker { display: none; }
@@ -516,6 +520,7 @@
       font-size: 1.2rem;
       font-weight: 700;
       color: var(--green-dark);
+      font-family: "Roboto", sans-serif;
     }
 
     .section-header {
@@ -811,7 +816,7 @@
       </div>
     </section>
 
-        <section class="section">
+    <section class="section">
       <div class="container split">
         <div class="content-block">
           <h2>Privacy en GDPR</h2>
@@ -820,7 +825,7 @@
             <p>Punctoo kiest bewust voor géén app. De smartphone wordt enkel gebruikt als interface, zonder verwerking van persoonsgegevens.
 <br>Bij elke scan wordt uitsluitend een unieke code verstuurd. 
 Pas binnen de beveiligde omgeving van de onderneming wordt deze code gekoppeld aan een werknemer.</p> 
-<p>Zo vermijden we privacyrisico’s en blijft het gebruik van het privétoestel volledig gerespecteerd 
+            <p>Zo vermijden we privacyrisico’s en blijft het gebruik van het privétoestel volledig gerespecteerd 
 — volledig in lijn met de GDPR.</p>
           </div>
         </div>
@@ -1031,7 +1036,7 @@ Jouw abonnement wordt dan niet meer automatisch verlengd. Er zijn geen verborgen
         </div>
 
         <div class="footer-badges">
-          <img src="images/image77777.png" alt="Audited badge" class="footer-badge-img">
+          <img src="images/image7777.png" alt="Audited badge" class="footer-badge-img">
           <img src="images/image8.png" alt="Secured server badge" class="footer-badge-img">
           <img src="images/image99.png" alt="GDPR compliant badge" class="footer-badge-img">
         </div>
