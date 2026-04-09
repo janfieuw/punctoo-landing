@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Verantwoordelijkheid en controle over dataverwerking | Punctoo</title>
+  <title>Dataverwerking | Punctoo</title>
   <style>
     :root {
       --bg: #f3f3f0;
@@ -19,7 +19,9 @@
       --max: 900px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -109,15 +111,26 @@
       border-radius: 8px;
     }
 
-    h1 {
-      margin: 0 0 18px;
+    h1,
+    h2 {
+      margin: 0 0 14px;
       font-weight: 700;
       line-height: 0.98;
       letter-spacing: -0.045em;
       color: var(--text);
       font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
       font-stretch: condensed;
+    }
+
+    h1 {
       font-size: clamp(2rem, 4.6vw, 3.2rem);
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+      margin-top: 34px;
+      margin-bottom: 12px;
     }
 
     p {
@@ -128,11 +141,6 @@
 
     strong {
       color: var(--text);
-    }
-
-    .intro {
-      max-width: 62ch;
-      font-size: 1.05rem;
     }
 
     .footer {
@@ -170,6 +178,10 @@
         padding: 24px;
         border-radius: 24px;
       }
+
+      h2 {
+        margin-top: 24px;
+      }
     }
   </style>
 </head>
@@ -177,7 +189,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="index.html" class="logo" aria-label="Punctoo home">
-        <img src="images/logo-punctooo.png" alt="Punctoo logo">
+        <img src="images/logo-punctooo.png" alt="Punctoo logo" />
       </a>
       <a href="index.html" class="btn">Terug naar website</a>
     </div>
@@ -187,38 +199,42 @@
     <div class="container">
       <article class="card">
         <span class="eyebrow">Dataverwerking</span>
-        <h1>Verantwoordelijkheid en controle over dataverwerking</h1>
+        <h1>Verantwoordelijkheid, rechtsgrond en controle</h1>
 
-        <p class="intro">
-          In het kader van de GDPR blijft de werkgever verantwoordelijk voor de verwerking van persoonsgegevens, ook wanneer gebruik wordt gemaakt van externe softwaretoepassingen voor arbeidstijdregistratie.
+        <p>
+          In het kader van de GDPR treedt de werkgever op als verwerkingsverantwoordelijke voor arbeidstijdregistratie, ook bij gebruik van externe software. Punctoo treedt op als verwerker en verwerkt gegevens uitsluitend in opdracht van de werkgever, conform een verwerkersovereenkomst.
         </p>
 
         <p>
-          Een belangrijk aandachtspunt hierbij is de mate van controle en transparantie over de dataverwerking. Bij bepaalde toepassingen is niet altijd volledig duidelijk welke gegevens worden verzameld, op welke wijze deze worden verwerkt en of er bijkomende gegevensstromen plaatsvinden.
+          De verwerking is gebaseerd op wettelijke verplichtingen inzake arbeidsduurregistratie en is noodzakelijk voor de uitvoering van de arbeidsovereenkomst.
+        </p>
+
+        <h2>Minimale en transparante verwerking</h2>
+
+        <p>
+          Punctoo werd ontwikkeld met focus op transparantie en minimale gegevensverwerking. Bij elke registratie wordt uitsluitend een unieke, pseudonieme code verwerkt. Er worden geen rechtstreeks identificeerbare persoonsgegevens (zoals naam, locatie of toestelgegevens) verzonden.
         </p>
 
         <p>
-          Punctoo werd ontwikkeld met het oog op maximale transparantie en minimale gegevensverwerking.
+          De koppeling met de identiteit van de werknemer gebeurt uitsluitend binnen de beveiligde serveromgeving. Hierdoor blijft de verwerking beperkt tot wat strikt noodzakelijk is.
         </p>
 
-        <p>
-          Bij elke registratie wordt uitsluitend een unieke, pseudonieme code verwerkt. Er worden geen rechtstreeks identificeerbare persoonsgegevens, zoals naam of locatiegegevens, verzonden tijdens het registratieproces. De koppeling tussen de code en de identiteit van de werknemer gebeurt uitsluitend binnen de beveiligde omgeving van de server.
-        </p>
+        <h2>Geen bijkomende verwerking</h2>
 
         <p>
-          Hierdoor blijft de verwerking van persoonsgegevens beperkt tot wat noodzakelijk is voor het doel van arbeidstijdregistratie.
+          Er worden geen overbodige gegevens verzameld en er is geen sprake van verborgen dataverwerking, tracking of profilering. Gegevens worden uitsluitend gebruikt voor arbeidstijdregistratie.
         </p>
 
-        <p>
-          Punctoo vermijdt het verzamelen van bijkomende gegevens die niet functioneel vereist zijn en voorziet geen verborgen dataverwerking of trackingmechanismen.
-        </p>
+        <h2>Beveiliging en bewaartermijn</h2>
 
         <p>
-          De data wordt na 7 jaar definitief verwijderd.
+          Punctoo voorziet passende technische en organisatorische maatregelen ter bescherming van persoonsgegevens. Gegevens worden bewaard gedurende maximaal 7 jaar en daarna definitief verwijderd.
         </p>
 
+        <h2>Rechten en gegevensstromen</h2>
+
         <p>
-          Op deze manier beschikt de werkgever over een duidelijk en controleerbaar inzicht in de verwerkte gegevens, wat bijdraagt tot de naleving van de geldende GDPR-verplichtingen.
+          Werknemers behouden hun GDPR-rechten (inzage, correctie, beperking), uit te oefenen via de werkgever. Gegevens worden verwerkt binnen de Europese Economische Ruimte en niet doorgegeven aan derde landen zonder passende waarborgen.
         </p>
       </article>
     </div>
