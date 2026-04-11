@@ -365,6 +365,31 @@
 
     .cta-strip { padding-top: 8px; }
 
+    .trial-highlight {
+      display: inline-block;
+      background: var(--green);
+      border-radius: 34px;
+      padding: 22px 24px 24px;
+      box-shadow: var(--shadow);
+      max-width: 740px;
+    }
+
+    .trial-highlight .btn {
+      margin-bottom: 18px;
+    }
+
+    .trial-note {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.95);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 60ch;
+    }
+
+    .trial-note strong {
+      color: white;
+    }
+
     .law-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -497,11 +522,12 @@
       display: block;
     }
 
- .footer2-badge2-img {
+    .footer2-badge2-img {
       width: 120px;
       height: auto;
       display: block;
     }
+
     .section-anchor {
       position: relative;
       top: -120px;
@@ -609,6 +635,11 @@
       .hero-price-line {
         max-width: none;
       }
+
+      .trial-highlight {
+        width: 100%;
+        display: block;
+      }
     }
 
     @media (max-width: 640px) {
@@ -711,6 +742,16 @@
 
       .law-list-box {
         margin-left: 0;
+      }
+
+      .trial-highlight {
+        padding: 18px 18px 20px;
+        border-radius: 26px;
+      }
+
+      .trial-note {
+        font-size: 0.95rem;
+        line-height: 1.65;
       }
     }
   </style>
@@ -829,10 +870,10 @@
           <div class="quote">
             <p>Een app creëert frictie met de GDPR-wetgeving omdat er in de basis persoonsgegevens worden verwerkt. 
               <br>De werkgever blijft verantwoordelijk voor de naleving van de GDPR en dus ook, indirect, voor de correcte werking van die app — wat in de praktijk moeilijk te controleren is.</p>
-<p>Daarnaast moet een app geïnstalleerd worden op de smartphone van de werknemer, wat in veel gevallen een privétoestel is.</p>
-<p>Door een fysieke interface te gebruiken waarbij enkel een pseudonieme code wordt verwerkt, 
-  blijft de gegevensverwerking minimaal en worden geen identificeerbare persoonsgegevens verzonden. 
-          </p>
+            <p>Daarnaast moet een app geïnstalleerd worden op de smartphone van de werknemer, wat in veel gevallen een privétoestel is.</p>
+            <p>Door een fysieke interface te gebruiken waarbij enkel een pseudonieme code wordt verwerkt, 
+              blijft de gegevensverwerking minimaal en worden geen identificeerbare persoonsgegevens verzonden.
+            </p>
           </div>
         </div>
 
@@ -844,13 +885,13 @@
 
     <section class="section cta-strip">
       <div class="container">
-        <a href="http://www.mypunctoo.be" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
-        <div style="margin-top:18px;">
-          <p class="muted-small">
+        <div class="trial-highlight">
+          <a href="http://www.mypunctoo.be" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
+          <p class="trial-note">
             Tijdens de testperiode scan je eenvoudig de QR-codes die je kunt downloaden.
             <br>Na 14 dagen zal gevraagd worden om het abonnement te activeren.
             <br>Pas na activatie volgt uitnodiging tot betalen.
-            <br><b>Na ontvangst van de betaling sturen we de definitieve scan tag op</b>.
+            <br><strong>Na ontvangst van de betaling sturen we de definitieve scan tag op.</strong>
           </p>
         </div>
       </div>
@@ -915,7 +956,7 @@
           <a href="#top" class="back-to-top" aria-label="Terug naar boven">↑</a>
         </div>
         <div class="faq">
-          <details>
+          <details open>
             <summary>Hoe bepaal je de verwachte aanwezigheidsduur?</summary>
             <div class="faq__body">
               <p>De verwachte aanwezigheidsduur wordt ingesteld per werknemer in jouw MyPunctoo.
@@ -928,7 +969,7 @@ Je merkt meteen hoe eenvoudig en intuïtief het systeem werkt.</p>
             </div>
           </details>
 
-           <details>
+          <details open>
             <summary>Mijn bediende werkt normaal nooit op woensdag. Héél af en toe wisselt ze haar vrije dag met de maandag.</summary>
             <div class="faq__body">
               <p>Je hoeft het werkrooster niet aan te passen. 
