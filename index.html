@@ -347,13 +347,18 @@
       min-height: auto;
     }
 
-    .visual-img {
-      width: 100%;
-      max-width: 420px;
-      height: auto;
-      display: block;
-      border-radius: 28px;
-    }
+.visual-img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  border-radius: 28px;
+}
+
+/* NIEUW → slagschaduw specifiek voor scan tag (image4) */
+.visual-img--scantag {
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
+}
 
     .visual-img--narrow {
       max-width: 590px;
@@ -805,7 +810,7 @@
         </div>
 
         <div class="visual-card visual-card--plain">
-          <img src="images/image4.png" alt="Scan tag" class="visual-img visual-img--narrow">
+          <img src="images/image4.png" alt="Scan tag" class="visual-img visual-img--narrow visual-img--scantag">
         </div>
       </div>
     </section>
