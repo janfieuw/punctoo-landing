@@ -4,12 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Punctoo – Eenvoudige arbeidstijdregistratie</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
   <style>
     :root {
@@ -18,13 +17,11 @@
       --surface-soft: #ecece7;
       --text: #252521;
       --muted: #66665f;
-      --green: #6f9b69;
+      --green: #5d8f61;
       --green-dark: #4f7f53;
       --green-soft: #d9efcb;
       --yellow: #efbe00;
       --yellow-dark: #d2a700;
-      --hero-blue: #4466b0;
-      --hero-blue-dark: #38579a;
       --shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
       --radius-xl: 30px;
       --max: 1180px;
@@ -232,19 +229,19 @@
     }
 
     .hero-media {
-      min-height: 430px;
+      min-height: 410px;
       position: relative;
       background: url('images/image11.png') center/cover no-repeat;
     }
 
     .hero-copy {
-      padding: 34px 28px 24px 28px;
+      padding: 40px 26px 36px 26px;
       background: var(--green);
       color: white;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      gap: 22px;
+      justify-content: flex-start;
+      font-size: 0.8em;
     }
 
     .hero-copy h1,
@@ -252,71 +249,55 @@
       color: white;
     }
 
-    .hero-copy__top {
-      display: flex;
-      flex-direction: column;
-      gap: 22px;
-      align-items: flex-start;
-    }
-
-    .hero-main-line,
-    .hero-price-line {
+    .hero-copy h1 {
+      max-width: 12ch;
       margin: 0;
-      color: white;
+      font-size: clamp(1.5rem, 3.2vw, 2.15rem);
       font-weight: 900;
       line-height: 1.02;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.025em;
+      text-transform: none;
       font-family: "Roboto", sans-serif;
     }
 
-    .hero-main-line {
-      font-size: clamp(2rem, 3.4vw, 3.15rem);
-      max-width: 11.5ch;
-      text-wrap: balance;
+    .hero-copy p,
+    .hero-copy .muted-note {
+      color: rgba(255,255,255,0.92);
+      max-width: 52ch;
+    }
+
+    .hero-copy .muted-note {
+      margin: 26px 0 0;
+      font-size: 0.9rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
     }
 
     .hero-price-line {
-      font-size: clamp(2rem, 3vw, 2.9rem);
-      max-width: 11.5ch;
-      text-wrap: balance;
+      margin: 18px 0 0;
+      max-width: 14ch;
+      font-size: clamp(1.7rem, 2.4vw, 1.6rem);
+      font-weight: 900;
+      line-height: 1.02;
+      letter-spacing: -0.025em;
+      text-transform: none;
+      color: white;
+      font-family: "Roboto", sans-serif;
     }
 
     .hero-price-chip {
       display: inline-block;
-      padding: 0.02em 0.14em;
-      background: #2b6fb6;
+      padding: 0 4px;
+      background: #0f69a9;
       color: white;
-      border-radius: 4px;
-      line-height: 0.98;
-      box-shadow: inset 0 -1px 0 rgba(255,255,255,0.12);
+      line-height: 1.02;
     }
 
-    .hero-cta-box {
-      display: inline-block;
-      width: 100%;
-      max-width: 470px;
-      padding: 18px 18px 20px;
-      background: var(--hero-blue);
-      color: white;
-      border-radius: 18px;
-      font-weight: 900;
-      font-size: clamp(1.3rem, 2vw, 2rem);
-      line-height: 1.08;
-      letter-spacing: -0.02em;
-      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
-    }
-
-    .hero-cta-box:hover {
-      background: var(--hero-blue-dark);
-    }
-
-    .hero-bottom-note {
-      margin: 0;
-      color: rgba(255,255,255,0.96);
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 1.25;
-      letter-spacing: -0.015em;
+    .hero-copy__top {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      align-items: flex-start;
     }
 
     .quick-links {
@@ -367,19 +348,20 @@
       min-height: auto;
     }
 
-    .visual-img {
-      width: 100%;
-      max-width: 420px;
-      height: auto;
-      display: block;
-      border-radius: 28px;
-    }
+.visual-img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  display: block;
+  border-radius: 28px;
+}
 
-    .visual-img--scantag {
-      box-shadow:
-        0 8px 18px rgba(0, 0, 0, 0.22),
-        0 2px 6px rgba(0, 0, 0, 0.18);
-    }
+/* NIEUW → slagschaduw specifiek voor scan tag (image4) */
+.visual-img--scantag {
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.22),
+    0 2px 6px rgba(0, 0, 0, 0.18);
+}
 
     .visual-img--narrow {
       max-width: 590px;
@@ -654,20 +636,11 @@
       }
 
       .hero-copy {
-        padding: 28px 22px 22px;
-        gap: 18px;
+        padding: 34px 24px 30px;
       }
 
-      .hero-copy__top {
-        gap: 18px;
-      }
-
-      .hero-main-line,
+      .hero-copy h1,
       .hero-price-line {
-        max-width: none;
-      }
-
-      .hero-cta-box {
         max-width: none;
       }
 
@@ -727,23 +700,9 @@
         min-height: 300px;
       }
 
-      .hero-main-line {
-        font-size: 1.95rem;
-      }
-
+      .hero-copy h1,
       .hero-price-line {
-        font-size: 1.9rem;
-      }
-
-      .hero-cta-box {
-        font-size: 1.35rem;
-        padding: 16px 16px 18px;
-        border-radius: 16px;
-      }
-
-      .hero-bottom-note {
-        font-size: 0.95rem;
-        line-height: 1.35;
+        font-size: 1.6rem;
       }
 
       h2 {
@@ -805,13 +764,13 @@
     }
   </style>
 </head>
-
 <body>
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="#top" class="logo" aria-label="Punctoo home">
         <img src="images/logo-punctooo.png" alt="Punctoo logo">
       </a>
+
       <div class="site-nav">
         <a href="http://www.mypunctoo.be" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
       </div>
@@ -826,22 +785,10 @@
 
           <div class="hero-copy">
             <div class="hero-copy__top">
-              <p class="hero-main-line">
-                Vanaf 01/01/2027 is elk bedrijf verplicht om de arbeidstijd te registreren van zijn werknemers.
-              </p>
-
-              <p class="hero-price-line">
-                Voor <span class="hero-price-chip">240 euro/jaar</span> ben je met Punctoo 100% in orde zonder extra werk.
-              </p>
-
-              <a href="http://www.mypunctoo.be" class="hero-cta-box">
-                Start vandaag en we verlengen jouw eerste abonnementsjaar tot eind 2027!
-              </a>
+              <p class="hero-price-line">Vanaf 01/01/2027 is elk bedrijf verplicht om de arbeidstijd te registreren van zijn werknemers.</p>
+              <p class="hero-price-line"><br><br>Voor <span class="hero-price-chip">240 euro/jaar</span> ben je met Punctoo 100% in orde zonder extra werk.</p>
+              <p class="muted-note">Prijs zonder btw.</p>
             </div>
-
-            <p class="hero-bottom-note">
-              Prijs zonder 21% BTW - abonnement 100% fiscaal aftrekbaar
-            </p>
           </div>
         </div>
 
@@ -858,16 +805,14 @@
           <h2>De scan tag</h2>
           <p class="eyebrow">Registratie terugbrengen tot een natuurlijke reflex.</p>
           <div class="quote">
-            <p>
-              Maak registratie opnieuw fysiek aanwezig op de werkvloer — herkenbaar zoals de klassieke prikklok, maar in een moderne en eenvoudige vorm.
+            <p>Maak registratie opnieuw fysiek aanwezig op de werkvloer — herkenbaar zoals de klassieke prikklok, maar in een moderne en eenvoudige vorm.
               <br>Zo wordt registratie geen extra taak, maar een vanzelfsprekende reflex binnen het dagelijkse ritme.
             </p>
-            <p>
-              <b>De scan tag is een aluminium plaatje met UV opdruk, 10 cm hoog en 15 cm breed. Het plaatje is ook geschikt voor buitengebruik.
-              <br>De scan tag is uniek per bedrijf en inbegrepen in het abonnement.</b>
-            </p>
+            <p><b>De scan tag is een aluminium plaatje met UV opdruk, 10 cm hoog en 15 cm breed. Het plaatje is ook geschikt voor buitengebruik.
+              <br>De scan tag is uniek per bedrijf en inbegrepen in het abonnement.</b></p>
           </div>
         </div>
+
         <div class="visual-card visual-card--plain">
           <img src="images/scantag-desk.png" alt="Scan tag" class="visual-img visual-img--narrow">
         </div>
@@ -879,17 +824,14 @@
         <div class="visual-card visual-card--plain">
           <img src="images/image5555.png" alt="App voorbeeld" class="visual-img visual-img--narrow">
         </div>
+
         <div class="content-block">
           <h2>MyPunctoo</h2>
           <p class="eyebrow">Eenvoudig beheer.</p>
           <div class="quote">
-            <p>
-              MyPunctoo is het centrale platform waar je arbeidstijdregistratie eenvoudig beheert.
-              <br>Je voegt werknemers toe, stelt verwachte aanwezigheidsduur in en volgt alle prestaties in één overzichtelijke omgeving.
-            </p>
-            <p>
-              Dankzij de combinatie met de scan tag registreer je werktijden fysiek op de werkvloer, terwijl MyPunctoo alles automatisch verwerkt en opslaat op een beveiligde server.
-            </p>
+            <p>MyPunctoo is het centrale platform waar je arbeidstijdregistratie eenvoudig beheert.
+              <br>Je voegt werknemers toe, stelt verwachte aanwezigheidsduur in en volgt alle prestaties in één overzichtelijke omgeving.</p>
+            <p>Dankzij de combinatie met de scan tag registreer je werktijden fysiek op de werkvloer, terwijl MyPunctoo alles automatisch verwerkt en opslaat op een beveiligde server.</p>
           </div>
         </div>
       </div>
@@ -905,6 +847,7 @@
             <p>Binnen glijdende werkuren blijft die flexibiliteit behouden, terwijl de referentietijd als duidelijke basis dient voor objectieve opvolging.</p>
           </div>
         </div>
+
         <div class="visual-card visual-card--plain">
           <img src="images/image543.png" alt="Monitor rapportering" class="visual-img visual-img--monitor">
         </div>
@@ -916,6 +859,7 @@
         <div class="visual-card visual-card--plain">
           <img src="images/image3.png" alt="App voorbeeld" class="visual-img visual-img--narrow">
         </div>
+
         <div class="content-block">
           <h2>Eenvoudig voldoen aan de wet</h2>
           <p class="eyebrow">Ontzorgen van de werkgever.</p>
@@ -937,6 +881,7 @@
             <p>Daarom kozen wij voor een interface die geen installatie vereist en waarbij de smartphone enkel fungeert als scanner, zonder bijkomende dataverwerking of toegang tot persoonlijke gegevens. Hierdoor blijft de drempel voor werknemers laag en worden privacy- en gebruiksbezwaren maximaal beperkt.</p>
           </div>
         </div>
+
         <div class="visual-card visual-card--plain">
           <img src="images/image10.png" alt="Scan tag" class="visual-img visual-img--monitor">
         </div>
@@ -965,10 +910,13 @@
             <h2 id="arbeidswet-titel">De vernieuwde arbeidswet</h2>
             <a href="#top" class="back-to-top" aria-label="Terug naar boven">↑</a>
           </div>
+
           <p class="eyebrow">Eenvoudig 100% in orde met Punctoo.</p>
+
           <div class="quote law-intro">
             <p>Vanaf 1 januari 2027 wordt arbeidstijdregistratie verplicht voor alle ondernemingen.<br>Hoewel nog niet alle details bekend zijn weten we wel al de basisregels.</p>
           </div>
+
           <div class="law-list-box">
             <ul>
               <li>
@@ -993,10 +941,12 @@
               </li>
             </ul>
           </div>
+
           <div class="quote">
             <p>Het is vanuit deze essentie dat Punctoo werd ontwikkeld: hoe kunnen we zo eenvoudig mogelijk voldoen aan deze regels en administratieve overlast vermijden.</p>
           </div>
         </div>
+
         <div class="people-shot">
           <img src="images/image666.png" alt="Team op kantoor">
         </div>
@@ -1015,20 +965,20 @@
             <summary>Hoe bepaal je de verwachte aanwezigheidsduur?</summary>
             <div class="faq__body">
               <p>De verwachte aanwezigheidsduur wordt ingesteld per werknemer in jouw MyPunctoo.
-              <br>Dit is de verwachte tijd tussen de IN en OUT scan, inclusief pauze.
-              <br>Een werkdag van 8u met een pauze van 30 minuten is 510 minuten.
-              <br>Je doet dit eenvoudig via een vast, herhalend werkrooster of via een kalender waarin je elke dag individueel kunt aanpassen.
-              <br>
-              Start gerust met een abonnement met 14 dagen bedenktijd.
-              Je merkt meteen hoe eenvoudig en intuïtief het systeem werkt.</p>
+<br>Dit is de verwachte tijd tussen de IN en OUT scan, inclusief pauze.
+<br>Een werkdag van 8u met een pauze van 30 minuten is 510 minuten.
+<br>Je doet dit eenvoudig via een vast, herhalend werkrooster of via een kalender waarin je elke dag individueel kunt aanpassen.
+<br>
+Start gerust met een abonnement met 14 dagen bedenktijd.
+Je merkt meteen hoe eenvoudig en intuïtief het systeem werkt.</p>
             </div>
           </details>
 
           <details>
             <summary>Mijn bediende werkt normaal nooit op woensdag. Héél af en toe wisselt ze haar vrije dag met de maandag.</summary>
             <div class="faq__body">
-              <p>Je hoeft het werkrooster niet aan te passen.
-              <br>De overtijd van wél werken op woensdag wordt geneutraliseerd door de ondertijd van niet werken op maandag.</p>
+              <p>Je hoeft het werkrooster niet aan te passen. 
+                <br>De overtijd van wél werken op woensdag wordt geneutraliseerd door de ondertijd van niet werken op maandag.</p>
             </div>
           </details>
 
@@ -1036,21 +986,21 @@
             <summary>Hoe weet de scan tag wie er scant?</summary>
             <div class="faq__body">
               <p>Elke werknemer die je toevoegt in jouw MyPunctoo krijgt automatisch een code.
-              <br>Bij de eerste IN-scan wordt deze code 1 keer gevraagd.
-              <br>Daarna zal de ScanTag de smartphone herkennen die in jouw MyPunctoo aan de werknemer is toegewezen.</p>
+                <br>Bij de eerste IN-scan wordt deze code 1 keer gevraagd.
+                <br>Daarna zal de ScanTag de smartphone herkennen die in jouw MyPunctoo aan de werknemer is toegewezen.</p>
             </div>
           </details>
 
-          <details>
+ <details>
             <summary>Mijn werknemer wil zijn persoonlijke smartphone niet gebruiken. Wat nu?</summary>
             <div class="faq__body">
               <p>Dat begrijpen we volledig. Daarom werd Punctoo bewust zo ontworpen dat een smartphone geen persoonlijk hulpmiddel wordt.
-              <br>De smartphone dient enkel als scanner, zoals een barcodelezer.
-              <br>Er wordt geen enkele persoonlijke data van de smartphone gebruikt.</p>
+                <br>De smartphone dient enkel als scanner, zoals een barcodelezer.
+                <br>Er wordt geen enkele persoonlijke data van de smartphone gebruikt.</p>
             </div>
           </details>
 
-          <details>
+<details>
             <summary>Is er een alternatief indien mijn werknemer zijn persoonlijke smartphone niet wil gebruiken?</summary>
             <div class="faq__body">
               <p>Ja. Er kan ook in en uitgescand worden via <a href="https://www.mypunctoo.be/manualscan"><u>www.mypunctoo.be/manualscan</u></a></p>
@@ -1061,7 +1011,7 @@
             <summary>Zijn er opstart- of administratieve kosten?</summary>
             <div class="faq__body">
               <p>Neen. Jouw enige kost is het jaarlijks abonnement.
-              <br>In de prijs zit de productie van jouw persoonlijke scan tag en verzendingskosten inbegrepen.</p>
+                <br>In de prijs zit de productie van jouw persoonlijke scan tag en verzendingskosten inbegrepen.</p>
             </div>
           </details>
 
@@ -1069,8 +1019,8 @@
             <summary>Wat gebeurt er met mijn data als ik mijn abonnement stopzet?</summary>
             <div class="faq__body">
               <p>Wanneer je jouw abonnement stop zet wordt de scanfunctie niet meer beschikbaar.
-              <br>Je behoudt wel toegang tot jouw MyPunctoo en tot jouw bestaande data en rapporten.
-              <br>Wij garanderen dat je voldoet aan de bewaarplicht.</p>
+<br>Je behoudt wel toegang tot jouw MyPunctoo en tot jouw bestaande data en rapporten.
+<br>Wij garanderen dat je voldoet aan de bewaarplicht.</p>
             </div>
           </details>
 
@@ -1078,15 +1028,17 @@
             <summary>Wat als mijn werknemer vergeet te scannen?</summary>
             <div class="faq__body">
               <p>Menselijke fouten komen voor en worden niet beschouwd als fraude.
-              <br>Punctoo markeert onvolledige of afwijkende scans duidelijk, zodat ze correct geïnterpreteerd kunnen worden door werkgever of HR.</p>
+<br>Punctoo markeert onvolledige of afwijkende scans duidelijk, zodat ze correct geïnterpreteerd
+kunnen worden door werkgever of HR.</p>
             </div>
           </details>
 
           <details>
             <summary>Wat als mijn werknemer zijn smartphone kwijt is?</summary>
             <div class="faq__body">
-              <p>Wanneer de werknemer zijn nieuwe smartphone gebruikt voor een nieuwe scan zal de QR-code de smartphone herkennen als nieuw en opnieuw 1 keer de ID vragen.
-              <br>Daarna is de nieuwe smartphone terug gekoppeld.</p>
+              <p>Wanneer de werknemer zijn nieuwe smartphone gebruikt voor een nieuwe
+                scan zal de QR-code de smartphone herkennen als nieuw en opnieuw 1 keer de ID vragen.
+          <br>Daarna is de nieuwe smartphone terug gekoppeld.</p>
             </div>
           </details>
 
@@ -1101,7 +1053,7 @@
             <summary>Wat bij ontslag?</summary>
             <div class="faq__body">
               <p>Je kan in jouw MyPunctoo ex-medewerkers op inactief zetten.
-              <br>De oude data blijft uiteraard onveranderlijk bestaan.</p>
+<br>De oude data blijft uiteraard onveranderlijk bestaan.</p>
             </div>
           </details>
 
@@ -1109,8 +1061,8 @@
             <summary>Wat met glijdende uren of nachtwerk?</summary>
             <div class="faq__body">
               <p>De rapporten vermelden steeds het tijdstip van de scan-IN en scan-OUT,
-              <br>de tijdsduur tussen de scanbewegingen en vergelijking met de referentieduur.
-              <br>Een systeem met glijdende uren of nachtwerk heeft dus geen invloed op een objectieve registratie.</p>
+                <br>de tijdsduur tussen de scanbewegingen en vergelijking met de referentieduur.
+                <br>Een systeem met glijdende uren of nachtwerk heeft dus geen invloed op een objectieve registratie.</p>
             </div>
           </details>
 
@@ -1118,7 +1070,7 @@
             <summary>Hoe zet ik mijn abonnement stop?</summary>
             <div class="faq__body">
               <p>Je kan jouw abonnement gemakkelijk stop zetten in jouw MyPunctoo.<br>
-              Jouw abonnement wordt dan niet meer automatisch verlengd. Er zijn geen verborgen opzegkosten.</p>
+Jouw abonnement wordt dan niet meer automatisch verlengd. Er zijn geen verborgen opzegkosten.</p>
             </div>
           </details>
 
@@ -1126,7 +1078,7 @@
             <summary>Kan ik extra scan tags bestellen?</summary>
             <div class="faq__body">
               <p>Ja. Je kan in jouw MyPunctoo eenvoudig extra scan tags bestellen.
-              <br>Een scan tag kost 25 euro.</p>
+<br>Een scan tag kost 25 euro.</p>
             </div>
           </details>
 
@@ -1134,12 +1086,12 @@
             <summary>Kan mijn werknemer thuis scannen?</summary>
             <div class="faq__body">
               <p>Ja, dat is technisch mogelijk.
-              <br>Een werknemer kan scannen via de scan tag in PDF-vorm die beschikbaar is in jouw MyPunctoo.
-              <br>Of er kan bewust een extra scan tag besteld worden.
-              <br><br>Hoe hiermee wordt omgegaan, is een bewuste keuze van de werkgever.
-              <br>Laat je dit toe? Dan raden we aan dit duidelijk vast te leggen in de arbeidsovereenkomst of het arbeidsreglement.
-              <br>Wil je dit niet toelaten? Punctoo kan fraude niet technisch voorkomen.
-              <br>Misbruik van de scan tag kan, net zoals elke andere inbreuk op het arbeidscontract of arbeidsreglement, gesanctioneerd worden door de werkgever.</p>
+                <br>Een werknemer kan scannen via de scan tag in PDF-vorm die beschikbaar is in jouw MyPunctoo.
+                <br>Of er kan bewust een extra scan tag besteld worden.
+<br><br>Hoe hiermee wordt omgegaan, is een bewuste keuze van de werkgever.
+<br>Laat je dit toe? Dan raden we aan dit duidelijk vast te leggen in de arbeidsovereenkomst of het arbeidsreglement.
+<br>Wil je dit niet toelaten? Punctoo kan fraude niet technisch voorkomen.
+<br>Misbruik van de scan tag kan, net zoals elke andere inbreuk op het arbeidscontract of arbeidsreglement, gesanctioneerd worden door de werkgever.</p>
             </div>
           </details>
         </div>
@@ -1153,6 +1105,7 @@
         <div class="footer-copy">
           <p><strong>Punctoo</strong> is een applicatie van VDGI Software ontwikkeling.</p>
           <p>Zwaluwstraat 18 - 9940 Ertvelde - BE 0.752.607.756 - <strong>info@punctoo.be</strong></p>
+
           <div class="footer-actions">
             <a href="voorwaarden.html" class="btn btn-light">Verkoopsvoorwaarden →</a>
             <a href="privacy.html" class="btn btn-light">Privacy verklaring →</a>
@@ -1160,6 +1113,7 @@
             <a href="dataverwerking.html" class="btn btn-light">Dataverwerking →</a>
           </div>
         </div>
+
         <div class="footer-badges">
           <img src="images/image8.png" alt="GDPR compliant badge" class="footer2-badge2-img">
           <img src="images/securedserver.png" alt="Secured data badge" class="footer-badge-img">
