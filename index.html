@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Punctoo – Eenvoudige arbeidstijdregistratie</title>
+ <meta name="description" content="Punctoo is een eenvoudige digitale prikklok en arbeidstijdregistratie voor Belgische KMO’s. Voldoe eenvoudig aan de tijdsregistratieplicht vanaf 2027, zonder app of extra administratie.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Punctoo">
+  <meta name="theme-color" content="#709b68">
+  <link rel="canonical" href="https://www.punctoo.be/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -786,12 +790,116 @@
       }
     }
   </style>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "Punctoo",
+      "url": "https://www.punctoo.be/",
+      "logo": "https://www.punctoo.be/images/logo-punctoo.png",
+      "vatID": "BE0752607756",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Zwaluwstraat 18",
+        "postalCode": "9940",
+        "addressLocality": "Ertvelde",
+        "addressCountry": "BE"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "Punctoo",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "url": "https://www.punctoo.be/",
+      "description": "Digitale prikklok en arbeidstijdregistratie voor Belgische KMO's, zonder app en met fysieke ScanTag.",
+      "offers": {
+        "@type": "Offer",
+        "price": "240",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hoe bepaal je de verwachte aanwezigheidsduur?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "De verwachte aanwezigheidsduur wordt ingesteld per werknemer in MyPunctoo. Dit is de verwachte tijd tussen IN- en OUT-scan, inclusief pauze."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Hoe weet de scan tag wie er scant?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elke werknemer krijgt automatisch een code. Bij de eerste IN-scan wordt deze code gevraagd en daarna wordt de smartphone herkend."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Mijn werknemer wil zijn persoonlijke smartphone niet gebruiken. Wat nu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Punctoo gebruikt de smartphone enkel als scanner en verwerkt geen persoonlijke data van het toestel."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is er een alternatief zonder gebruik van een smartphone?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, er kan ook in- en uitgeklokt worden via www.mypunctoo.be/manualscan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Zijn er opstart- of administratieve kosten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Neen. Het jaarlijks abonnement omvat de persoonlijke ScanTag en verzendingskosten."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat als mijn werknemer vergeet te scannen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Punctoo markeert onvolledige of afwijkende scans duidelijk, zodat ze correct geïnterpreteerd kunnen worden."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat met glijdende uren of nachtwerk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "De rapporten vermelden scan-IN, scan-OUT, tijdsduur en vergelijking met de referentieduur."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kan ik extra scan tags bestellen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. In MyPunctoo kunnen extra ScanTags besteld worden."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="container site-header__inner">
       <a href="#top" class="logo" aria-label="Punctoo home">
-        <img src="images/logo-punctoo.png" alt="Punctoo logo">
+        <img src="images/logo-punctoo.png" alt="Punctoo – digitale prikklok voor KMO">
       </a>
       <div class="site-nav">
         <a href="http://www.mypunctoo.be" class="btn btn-primary">Abonnement starten met 14 dagen bedenktijd →</a>
@@ -803,7 +911,7 @@
     <section class="hero">
       <div class="container">
         <div class="hero-card">
-          <div class="hero-media" aria-label="Hero afbeelding"></div>
+          <div class="hero-media" aria-label="Kantoor met Punctoo ScanTag voor digitale arbeidstijdregistratie"></div>
 
           <div class="hero-copy">
             <div class="hero-text">
@@ -848,7 +956,7 @@
           </div>
         </div>
         <div class="visual-card visual-card--plain">
-          <img src="images/scantag-stapel.png" alt="Scan tags op een stabel op een bureau" class="visual-img visual-img--narrow">
+          <img src="images/scantag-stapel.png" alt="Punctoo ScanTags voor digitale prikklok op de werkvloer" class="visual-img visual-img--narrow">
         </div>
       </div>
     </section>
@@ -856,7 +964,7 @@
     <section class="section">
       <div class="container split">
         <div class="visual-card visual-card--plain">
-          <img src="images/screenshot-mypunctoo.png" alt="MyPunctoo screenshot" class="visual-img visual-img--narrow">
+          <img src="images/screenshot-mypunctoo.png" alt="MyPunctoo dashboard voor arbeidstijdregistratie en werknemersbeheer" class="visual-img visual-img--narrow">
         </div>
         <div class="content-block">
           <h2>MyPunctoo</h2>
@@ -881,7 +989,7 @@
           </div>
         </div>
         <div class="visual-card visual-card--plain">
-          <img src="images/screenshot-mypunctoo-2.png" alt="MyPunctoo screenshot" class="visual-img visual-img--monitor">
+          <img src="images/screenshot-mypunctoo-2.png" alt="Overzicht van glijdende werkuren en referentieduur in MyPunctoo" class="visual-img visual-img--monitor">
         </div>
       </div>
     </section>
@@ -889,7 +997,7 @@
     <section class="section">
       <div class="container split">
         <div class="visual-card visual-card--plain">
-          <img src="images/wijzend-punctoo.png" alt="dame wijst en heeft een ScanTag vast" class="visual-img visual-img--narrow">
+          <img src="images/wijzend-punctoo.png" alt="Punctoo ScanTag als eenvoudige QR-prikklok voor werknemers" class="visual-img visual-img--narrow">
         </div>
         <div class="content-block">
           <h2>Eenvoudig voldoen aan de wet</h2>
@@ -913,7 +1021,7 @@
           </div>
         </div>
         <div class="visual-card visual-card--plain">
-          <img src="images/scannen-punctoo.png" alt="Dame scant een Punctoo ScanTag" class="visual-img visual-img--monitor">
+          <img src="images/scannen-punctoo.png" alt="Werknemer scant Punctoo ScanTag zonder app te installeren" class="visual-img visual-img--monitor">
         </div>
       </div>
     </section>
