@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Verplichte tijdsregistratie: wat VOKA zegt | Punctoo</title>
+
+  <meta name="description" content="VOKA noemt de verplichte arbeidstijdregistratie pure kafka. Ontdek hoe Punctoo tegemoetkomt aan de bezorgdheden van ondernemingen met eenvoudige arbeidstijdregistratie zonder complexe planningsoftware.">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Punctoo">
+  <meta name="theme-color" content="#5d8f61">
+
+  <link rel="canonical" href="https://www.punctoo.be/punctoo-en-voka-prikklok">
+
+  <meta property="og:title" content="Verplichte tijdsregistratie: wat VOKA zegt | Punctoo">
+  <meta property="og:description" content="VOKA waarschuwt voor extra administratie en rigiditeit. Punctoo komt tegemoet aan die bezorgdheden met eenvoudige arbeidstijdregistratie voor KMO’s.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://www.punctoo.be/punctoo-en-voka-prikklok">
+  <meta property="og:image" content="https://www.punctoo.be/images/kantoor-met-scantag.png">
+
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <style>
+    :root {
+      --bg: #f3f3f0;
+      --surface: #ffffff;
+      --text: #252521;
+      --muted: #66665f;
+      --green: #5d8f61;
+      --green-dark: #4f7f53;
+      --green-soft: #d9efcb;
+      --yellow: #efbe00;
+      --shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
+      --radius-xl: 30px;
+      --max: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(243, 243, 240, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(37, 37, 33, 0.05);
+    }
+
+    .site-header__inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo img {
+      height: 42px;
+      width: auto;
+      display: block;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: var(--yellow);
+      color: #231f00;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid var(--yellow);
+      text-align: center;
+    }
+
+    .page {
+      padding: 34px 0 60px;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(37, 37, 33, 0.05);
+      padding: 42px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 6px 10px;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.1;
+      border-radius: 8px;
+    }
+
+    h1,
+    h2 {
+      margin: 0 0 14px;
+      font-weight: 700;
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      color: var(--text);
+      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
+      font-stretch: condensed;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.6vw, 3.2rem);
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+      margin-top: 34px;
+      margin-bottom: 12px;
+    }
+
+    p,
+    li {
+      font-size: 1.02rem;
+      color: var(--muted);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .intro {
+      max-width: 66ch;
+      font-size: 1.05rem;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: auto;
+      border-radius: 24px;
+      margin: 26px 0 28px;
+      display: block;
+    }
+
+    .note-box {
+      margin: 26px 0;
+      padding: 22px 24px;
+      border-radius: 24px;
+      background: #f3f3f0;
+      border: 1px solid rgba(37, 37, 33, 0.08);
+    }
+
+    .note-box p {
+      margin-bottom: 0;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .cta-box {
+      margin-top: 34px;
+      padding: 24px;
+      border-radius: 24px;
+      background: var(--green-soft);
+    }
+
+    .cta-box p {
+      margin-bottom: 18px;
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .source-link {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      color: var(--green-dark);
+      font-weight: 600;
+    }
+
+    .footer {
+      padding: 0 0 50px;
+    }
+
+    .footer p {
+      font-size: 0.95rem;
+      margin: 0;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .site-header__inner {
+        min-height: auto;
+        padding: 16px 0;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+        min-height: auto;
+        padding: 14px 18px;
+        white-space: normal;
+        line-height: 1.35;
+      }
+
+      .page {
+        padding: 22px 0 40px;
+      }
+
+      .card {
+        padding: 24px;
+        border-radius: 24px;
+      }
+
+      h2 {
+        margin-top: 24px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Verplichte tijdsregistratie: wat VOKA zegt en hoe Punctoo tegemoetkomt",
+    "description": "VOKA noemt verplichte arbeidstijdregistratie pure kafka. Punctoo komt tegemoet aan die bezorgdheden met eenvoudige arbeidstijdregistratie voor KMO’s.",
+    "author": {
+      "@type": "Organization",
+      "name": "Punctoo"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Punctoo",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.punctoo.be/images/logo-punctoo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://www.punctoo.be/punctoo-en-voka-prikklok"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo" aria-label="Punctoo home">
+        <img src="images/logo-punctoo.png" alt="Punctoo logo">
+      </a>
+
+      <a href="https://www.punctoo.be" class="btn">
+        Naar Punctoo.be
+      </a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+
+      <article class="card">
+
+        <span class="eyebrow">
+          Punctoo vertrekt vanuit dezelfde praktische bezorgdheden die VOKA benoemt
+        </span>
+
+        <h1>Verplichte tijdsregistratie: wat VOKA zegt en hoe Punctoo tegemoetkomt</h1>
+
+        <img
+          src="images/wijzend-punctoo.png"
+          alt="Digitale prikklok van Punctoo met ScanTag voor arbeidstijdregistratie"
+          width="682"
+          height="393"
+          loading="eager"
+          class="hero-img">
+
+        <p class="intro">
+          VOKA reageerde bijzonder kritisch op de aangekondigde verplichte arbeidstijdregistratie.
+          De werkgeversorganisatie noemt de maatregel zelfs “pure kafka” en waarschuwt voor extra administratieve lasten, rigiditeit en systemen die onvoldoende aansluiten bij de realiteit van ondernemingen.
+        </p>
+
+        <p>
+          Die bezorgdheden zijn herkenbaar voor veel KMO’s.
+          Een systeem voor arbeidstijdregistratie mag de dagelijkse werking van een onderneming niet onnodig complex maken.
+          Net vanuit die pragmatische visie werd Punctoo ontwikkeld.
+        </p>
+
+        <div class="note-box">
+          <p>
+            Belangrijk: Punctoo is geen standpunt van VOKA en beweert niet door VOKA aanbevolen te worden.
+            Deze pagina legt uit hoe Punctoo tegemoetkomt aan de bezorgdheden die VOKA publiek heeft benoemd.
+          </p>
+        </div>
+
+        <h2>Wat zegt VOKA over verplichte arbeidstijdregistratie?</h2>
+
+        <p>
+          VOKA stelt dat een algemene verplichting tot tijdsregistratie een zware administratieve impact kan hebben op ondernemingen.
+          Volgens de werkgeversorganisatie dreigt de maatregel extra rigiditeit te creëren in een arbeidsmarkt die net nood heeft aan flexibiliteit.
+        </p>
+
+        <p>
+          Daarnaast wijst VOKA erop dat ondernemingen vandaag al veel administratieve verplichtingen hebben en dat bijkomende registratieverplichtingen disproportioneel kunnen aanvoelen, zeker voor kleinere bedrijven.
+        </p>
+
+        <p>
+          Ook het risico op systemen die niet aansluiten bij de dagelijkse praktijk van ondernemingen wordt door VOKA benadrukt.
+        </p>
+
+        <p>
+          Bron:
+          <a class="source-link" href="https://www.voka.be/vlaanderen/nieuws/verplichte-registratie-arbeidstijd-pure-kafka" target="_blank" rel="noopener">
+            VOKA – “Verplichte registratie arbeidstijd is pure kafka”
+          </a>.
+        </p>
+
+        <h2>Hoe komt Punctoo tegemoet aan die bezorgdheden?</h2>
+
+        <p>
+          Punctoo vertrekt bewust niet vanuit complexe planningsoftware, uitgebreide HR-processen of zware controlemechanismen.
+          De basis blijft eenvoudig: werknemers registreren hun aanwezigheid via een IN- en OUT-scan met de fysieke ScanTag.
+        </p>
+
+        <p>
+          Daardoor blijft het systeem laagdrempelig voor werknemers en eenvoudig beheersbaar voor werkgevers.
+        </p>
+
+        <h2>Geen app of installatie nodig</h2>
+
+        <p>
+          Bij veel oplossingen moeten werknemers apps installeren of werken via uitgebreide loginsystemen.
+          Dat brengt bijkomende praktische en privacy-gerelateerde aandachtspunten met zich mee.
+        </p>
+
+        <p>
+          Bij Punctoo wordt de smartphone enkel gebruikt als scanner.
+          Er hoeft geen app geïnstalleerd te worden en werknemers kunnen eenvoudig registreren via een scan.
+        </p>
+
+        <h2>Minder administratie voor KMO’s</h2>
+
+        <p>
+          Veel ondernemingen willen vooral een betrouwbare registratie van arbeidstijd die aantoonbaar is bij controle, zonder een volledig planningssysteem te moeten invoeren.
+        </p>
+
+        <p>
+          Punctoo focust precies op die behoefte.
+          Registraties worden automatisch verwerkt in MyPunctoo, met duidelijke rapportering van prestaties, afwijkingen en aanwezigheid.
+        </p>
+
+        <h2>Flexibiliteit blijft mogelijk</h2>
+
+        <p>
+          Punctoo werkt met een arbeidskader of referentietijd.
+          Daardoor hoeft niet elke werkdag vooraf volledig gepland te worden om toch transparantie rond prestaties en overuren te krijgen.
+        </p>
+
+        <p>
+          Dat laat ondernemingen toe om flexibiliteit en praktische afspraken binnen teams te behouden.
+        </p>
+
+        <h2>Eenvoudig, controleerbaar en pragmatisch</h2>
+
+        <p>
+          Punctoo probeert arbeidstijdregistratie terug te brengen naar de essentie:
+          een eenvoudige, controleerbare en transparante registratie van aanwezigheid zonder overbodige complexiteit.
+        </p>
+
+        <p>
+          Zo kunnen ondernemingen voldoen aan de toekomstige verplichtingen zonder hun dagelijkse werking onnodig te verzwaren.
+        </p>
+
+        <div class="cta-box">
+          <p>
+            Zoek je een eenvoudige digitale prikklok die aansluit bij de realiteit van Belgische KMO’s?
+          </p>
+
+          <a href="https://www.mypunctoo.be" class="btn">
+            Start met Punctoo
+          </a>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>
+        Punctoo is een gedeponeerd concept van FEWR BV (BOIP 01/01/2026).
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
