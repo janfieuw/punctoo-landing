@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algemene voorwaarden | Axoo</title>
+  <style>
+    :root {
+      --bg: #f3f3f0;
+      --surface: #ffffff;
+      --text: #252521;
+      --muted: #66665f;
+      --green: #5d8f61;
+      --green-dark: #4f7f53;
+      --green-soft: #d9efcb;
+      --yellow: #efbe00;
+      --shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
+      --radius-xl: 30px;
+      --max: 900px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(243, 243, 240, 0.94);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(37, 37, 33, 0.05);
+    }
+
+    .site-header__inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo img {
+      height: 42px;
+      width: auto;
+      display: block;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: var(--yellow);
+      color: #231f00;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border: 1px solid var(--yellow);
+      text-align: center;
+    }
+
+    .page {
+      padding: 34px 0 60px;
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(37, 37, 33, 0.05);
+      padding: 42px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 6px 10px;
+      background: var(--green-soft);
+      color: var(--green-dark);
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.1;
+      border-radius: 8px;
+    }
+
+    h1, h2 {
+      margin: 0 0 14px;
+      font-weight: 700;
+      line-height: 0.98;
+      letter-spacing: -0.045em;
+      color: var(--text);
+      font-family: "Inter", "Arial Narrow", "Helvetica Neue", sans-serif;
+      font-stretch: condensed;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4.6vw, 3.2rem);
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+      margin-top: 34px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      font-size: 1.02rem;
+      color: var(--muted);
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 0 0 14px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    .intro {
+      max-width: 62ch;
+      font-size: 1.05rem;
+    }
+
+    .meta-box {
+      margin-top: 24px;
+      padding: 18px 20px;
+      background: #f7f7f4;
+      border-radius: 20px;
+      border: 1px solid rgba(37, 37, 33, 0.05);
+    }
+
+    .footer {
+      padding: 0 0 50px;
+    }
+
+    .footer p {
+      font-size: 0.95rem;
+      margin: 0;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .site-header__inner {
+        min-height: auto;
+        padding: 16px 0;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .btn {
+        width: 100%;
+        min-height: auto;
+        padding: 14px 18px;
+        white-space: normal;
+        line-height: 1.35;
+      }
+
+      .page {
+        padding: 22px 0 40px;
+      }
+
+      .card {
+        padding: 24px;
+        border-radius: 24px;
+      }
+
+      h2 {
+        margin-top: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="logo" aria-label="Axoo home">
+        <img src="images/logo-axoo.png" alt="Axoo logo">
+      </a>
+      <a href="https://www.axoo.be" class="btn">Naar Axoo.be</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <article class="card">
+        <span class="eyebrow">Algemene voorwaarden</span>
+        <h1>Algemene voorwaarden van Axoo</h1>
+        <p class="intro">
+          Deze algemene voorwaarden zijn van toepassing op het gebruik van de website, de applicatie en de dienstverlening van Axoo, een applicatie van VDGI BV.
+        </p>
+
+        <div class="meta-box">
+          <p><strong>Dienstverlener</strong></p>
+          <p>
+            VDGI BV<br>
+            Zwaluwstraat 18<br>
+            9940 Ertvelde<br>
+            België<br>
+            BE 0752.607.756<br>
+            info@axoo.be
+          </p>
+        </div>
+
+        <h2>1. Toepasselijkheid</h2>
+        <p>Deze algemene voorwaarden zijn van toepassing op alle offertes, abonnementen, overeenkomsten, leveringen en diensten van Axoo, tenzij schriftelijk anders overeengekomen.</p>
+
+        <h2>2. Omschrijving van de dienst</h2>
+        <p>Axoo biedt een digitale oplossing voor arbeidstijdregistratie, rapportering en bijhorende ondersteuning. De dienstverlening kan onder meer bestaan uit:</p>
+        <ul>
+          <li>toegang tot een online platform;</li>
+          <li>registratie via QR-scan of vergelijkbare methodes;</li>
+          <li>rapportering en administratieve ondersteuning binnen de functionaliteiten van de applicatie;</li>
+          <li>levering van een fysieke scan tag of gelijkaardig hulpmiddel wanneer dit deel uitmaakt van het gekozen aanbod.</li>
+        </ul>
+
+        <h2>3. Abonnement</h2>
+        <p>Axoo wordt aangeboden via een betalend abonnement. Tenzij uitdrukkelijk anders vermeld, geldt de prijs zoals gepubliceerd op de website, exclusief btw. Het abonnement wordt actief vanaf de bevestigde activatie door de klant.</p>
+
+        <h2>4. Testperiode</h2>
+        <p>Nieuwe klanten kunnen gebruikmaken van een testperiode van 14 dagen, indien dit op de website of in het aanbod wordt vermeld. Tijdens deze periode kan de dienst vrijblijvend getest worden volgens de op dat moment geldende functionaliteiten en voorwaarden.</p>
+        <p>Na afloop van de testperiode wordt gevraagd het abonnement te activeren. Zonder activatie is VDGI BV niet verplicht de dienst verder beschikbaar te houden.</p>
+
+        <h2>5. Betaling</h2>
+        <p>Facturen zijn betaalbaar binnen de op de factuur vermelde termijn. Bij laattijdige of onvolledige betaling behoudt VDGI BV zich het recht voor om:</p>
+        <ul>
+          <li>de toegang tot de dienst tijdelijk te beperken of te schorsen;</li>
+          <li>verdere leveringen of ondersteuning op te schorten;</li>
+          <li>de verschuldigde bedragen te verhogen met toepasselijke interesten en invorderingskosten, voor zover wettelijk toegestaan.</li>
+        </ul>
+
+        <h2>6. Levering</h2>
+        <p>Toegang tot het digitale platform wordt in principe verleend na activatie. Wanneer een fysieke scan tag deel uitmaakt van het abonnement, wordt deze verzonden na ontvangst van de betaling, tenzij anders overeengekomen.</p>
+
+        <h2>7. Verplichtingen van de klant</h2>
+        <p>De klant verbindt zich ertoe om:</p>
+        <ul>
+          <li>juiste en volledige gegevens te verstrekken;</li>
+          <li>de applicatie en de bijhorende materialen zorgvuldig en conform hun bestemming te gebruiken;</li>
+          <li>geen handelingen te stellen die de veiligheid, beschikbaarheid of integriteit van het platform in gevaar brengen;</li>
+          <li>zelf in te staan voor het correct gebruik van de geregistreerde gegevens binnen de eigen organisatie.</li>
+        </ul>
+
+        <h2>8. Aansprakelijkheid</h2>
+        <p>VDGI BV levert een inspanningsverbintenis en geen resultaatsverbintenis, tenzij uitdrukkelijk anders overeengekomen. Wij zijn niet aansprakelijk voor:</p>
+        <ul>
+          <li>foutief of oneigenlijk gebruik van de dienst door de klant of diens medewerkers;</li>
+          <li>onjuiste of onvolledige invoer van gegevens;</li>
+          <li>indirecte schade, gevolgschade, winstderving of verlies van opportuniteiten;</li>
+          <li>tijdelijke onbeschikbaarheid veroorzaakt door onderhoud, storingen of externe factoren buiten onze redelijke controle.</li>
+        </ul>
+        <p>Voor zover wettelijk toegestaan, is onze aansprakelijkheid in elk geval beperkt tot het bedrag dat de klant effectief betaalde voor het lopende abonnement of de betrokken dienstperiode.</p>
+
+        <h2>9. Beschikbaarheid en onderhoud</h2>
+        <p>Wij streven naar een zo continu mogelijke beschikbaarheid van de dienst. Wij kunnen echter geen absolute of ononderbroken werking garanderen. Onderhoud, updates, technische storingen of externe verstoringen kunnen tijdelijke onderbrekingen veroorzaken.</p>
+
+        <h2>10. Duur en beëindiging</h2>
+        <p>Tenzij anders overeengekomen, wordt het abonnement afgesloten voor de overeengekomen periode. Opzegging dient te gebeuren vóór de verlengingsdatum en volgens de afgesproken modaliteiten. Reeds betaalde bedragen worden in beginsel niet terugbetaald, behalve indien de wet dwingend anders bepaalt.</p>
+
+        <h2>11. Herroepingsrecht</h2>
+        <p>Indien de klant een consument is, kan een wettelijk herroepingsrecht van toepassing zijn. Wanneer de klant een onderneming of professionele gebruiker is, is het herroepingsrecht in de regel niet van toepassing. Indien een testperiode of bedenktijd commercieel wordt aangeboden, geldt deze uitsluitend volgens de uitdrukkelijk gecommuniceerde voorwaarden.</p>
+
+        <h2>12. Intellectuele eigendom</h2>
+        <p>Alle intellectuele eigendomsrechten met betrekking tot Axoo, waaronder software, teksten, vormgeving, logo’s, documentatie en andere inhoud, blijven exclusief eigendom van VDGI BV of haar licentiegevers. Niets uit de dienst mag zonder voorafgaande schriftelijke toestemming worden gekopieerd, aangepast, verspreid of commercieel hergebruikt.</p>
+
+        <h2>13. Privacy en gegevensverwerking</h2>
+        <p>Voor de verwerking van persoonsgegevens verwijzen wij naar de afzonderlijke privacyverklaring van Axoo. De klant blijft verantwoordelijk voor het rechtmatig gebruik van persoonsgegevens binnen de eigen organisatie wanneer hij gebruikmaakt van de dienst.</p>
+
+        <h2>14. Toepasselijk recht en bevoegde rechtbank</h2>
+        <p>Op alle overeenkomsten en geschillen met betrekking tot Axoo is uitsluitend het Belgisch recht van toepassing. Geschillen behoren tot de bevoegdheid van de rechtbanken van het arrondissement van de maatschappelijke zetel van VDGI BV, tenzij dwingend recht anders bepaalt.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Axoo is een gedeponeerd concept van FEWR BV (BOIP 01/01/2026).S</p>
+    </div>
+  </footer>
+</body>
+</html>
+
